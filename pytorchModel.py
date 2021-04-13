@@ -6,16 +6,26 @@ from numpy import vstack
 from numpy import sqrt
 from pandas import read_csv
 from sklearn.metrics import mean_squared_error
+import torch
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 from torch.utils.data import random_split
 from torch import Tensor
+
 from torch.nn import Linear
 from torch.nn import Sigmoid
 from torch.nn import Module
 from torch.optim import SGD
 from torch.nn import MSELoss
+from torch.nn import BCELoss
 from torch.nn.init import xavier_uniform_
+
+from fairlearn.reductions import GridSearch
+from fairlearn.reductions import DemographicParity, ErrorRate
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.model_selection import train_test_split
+from skorch import NeuralNetClassifier
+
 
 class CSVDataset(Dataset):
     def __init__(self):
@@ -33,39 +43,37 @@ class CSVDataset(Dataset):
         df = df.dropna()
         df = df.sample(frac=1).reset_index(drop=True)
 
-        print(df.shape)
+        y = df['y']
+        df = df.drop(labels = ['y'], axis =1)
 
-    #    A = df[sensitive]
-    #    X = df.drop(labels = [sensitive], axis = 1)
-    #    X = df
-        #df = pd.get_dummies(df)
-        print(df.shape)
-        self.X = df.astype('float32').to_numpy()
-    #    self.X = self.X.to_frame().T
-        print("X encoded\n")
-        #self.X = X
-        print("X type: ")
-        print(type(self.X))
-        print("X len")
-        print(len(self.X))
-    #    print("X SHAPE: ")
-    #    print(self.X.shape())
-        #print(self.X.iloc[5])
+        A = df['sex']
+        X = df.drop(labels = ['sex'], axis = 1)
+        self.A = A#.to_numpy() #Series (make into numpy array)
 
-        self.y = df['y'].astype('float32')
+        print(X.shape)
+        X = pd.get_dummies(X)
+        self.raw_X = X
+        print(X.shape)
+        sc = StandardScaler()
+        X_scaled = sc.fit_transform(X)
+        X_scaled = pd.DataFrame(X_scaled, columns = X.columns)
+        self.X = X_scaled
+        print(f"Type of X: {type(self.X)} \n") #DataFrame
 
-        self.y = self.y.to_numpy()
-        print("Y type: ")
+        le = LabelEncoder()
+
+        #self.y = self.y.to_numpy()
+        y = le.fit_transform(y)
+        print("Y type: ") #numpy.ndArray
         print(type(self.y))
-        print(self.y)
 
-        self.y = self.y.reshape((len(self.y), 1))
-        print("Y LEN")
-        print(len(self.y))
+        self.y = y
+    def raw_X(self):
+        return self.raw_X
 
-    #    self.X = df.values[:,  :-1].astype('float32')
-    #    self.y = df.values[:, -1].astype('float32')
-    #    self.y = self.y.reshape((len(self.y),1))
+    def A (self):
+        return self.A
+
     def X (self):
         return self.X
 
@@ -77,65 +85,48 @@ class CSVDataset(Dataset):
 
     def __getitem__(self, idx):
         print("Getting item: %d" %(idx))
-        #print(type(self.X.iloc[idx]))
-        #return [self.X[idx], self.y[idx]]
-        return [self.X[idx], self.y[idx]]
+        return [self.X.iloc[idx], self.y[idx]]#, self.A[idx]]
 
     def get_splits(self, n_test=0.2):
         test_size= round(n_test * len(self.X))
         train_size= len(self.X) - test_size
         return  random_split(self, [train_size, test_size])
 
-'''
-class LoadDataset(Dataset):
-    def __init__(self, data, mode, sensitive_col):
-        self.len = data.shape[0]
-        print(data.head())
-        categorical_columns = ['workclass', 'education', 'marital-status',
-                                   'occupation', 'relationship', 'race',
-                                   'sex', 'native-country']
+dataset = CSVDataset()
+train, test = dataset.get_splits()
+train_dl = DataLoader(train, batch_size=32, shuffle = True)
+#test_dl = DataLoader(test, batch_size=1024, shuffle = False)
 
-        numerical_columns = ['education-num', 'capital-gain',
-                                 'capital-loss', 'hours-per-week']
+X = dataset.raw_X
 
-        for c in categorical_columns:
-            data[c] = data[c].astype('category')
-'''
+X_train, X_test, Y_train, Y_test, A_train, A_test = train_test_split(
+    dataset.X, dataset.y, dataset.A, test_size = 0.2, random_state = 0, stratify = dataset.y
+)
 
-def prep_data():
-    dataset = CSVDataset()
-    train, test = dataset.get_splits()
-    #print(dataset[5])
-    train_dl = DataLoader(train, batch_size=32, shuffle = True)
-    test_dl = DataLoader(test, batch_size=1024, shuffle = False)
-    return train_dl, test_dl
-    #return train, test
+# Does this go in the dataloaded? or in train method?
+X_train = X_train.reset_index(drop=True)
+A_train = A_train.reset_index(drop=True)
+X_test = X_test.reset_index(drop = True)
+A_test = A_test.reset_index(drop=True)
 
-train_dl, test_dl = prep_data()
-print("len train, len test: ")
-print(len(train_dl.dataset), len(test_dl.dataset))
-print("TYPE train_dl")
-print(type(train_dl))
-#print("SHAPE")
-#print(train_dl.shape())
-
-
+#def create_model():
+#regression??
 class MLP(Module):
     def __init__(self, n_inputs):
         super(MLP, self).__init__()
 
-        self.hidden1 = Linear(n_inputs, 10)
+        self.hidden1 = Linear(n_inputs, 12)
         xavier_uniform_(self.hidden1.weight)
         self.act1 = Sigmoid()
 
-        self.hidden2 = Linear(10, 8)
+        self.hidden2 = Linear(12, 8)
         xavier_uniform_(self.hidden2.weight)
         self.act2 = Sigmoid()
 
         self.hidden3 = Linear(8, 1)
         xavier_uniform_(self.hidden3.weight)
 
-    def forward(self, X):
+    def forward(self, X, **kwargs):
         X = self.hidden1(X)
         X = self.act1(X)
 
@@ -144,6 +135,112 @@ class MLP(Module):
 
         X = self.hidden3(X)
         return X
+
+# Add comments lovely.
+class SampleWeightNN(NeuralNetClassifier):
+    def __init__(self, *args, criterion__reduce = False, **kwargs):
+        super().__init__(*args, criterion__reduce=criterion__reduce, **kwargs)
+
+    def fit(self, X, y, sample_weight = None):
+        if isinstance(X, (pd.DataFrame, pd.Series)):
+            X = X.to_numpy().astype('float32')
+        if isinstance(y, (pd.DataFrame, pd.Series)):
+            y = y.to_numpy()
+        if sample_weight is not None and isinstance(sample_weight, (pd.DataFrame, pd.Series)):
+            sample_weight = sample_weight.to_numpy()
+        y = y.reshape([-1, 1])
+        sample_weight = sample_weight if sample_weight is not None else np.ones_like(y)
+        X = {'X': X, 'sample_weight': sample_weight}
+        return super().fit(X, y)
+
+    def predict(self, X):
+        if isinstance(X, (pd.DataFrame, pd.Series)):
+            X = X.to_numpy().astype('float32')
+        return (super().predict_proba(X) > 0.5).astype(np.float)
+
+    def get_loss(self, y_pred, y_true, X, *args, **kwargs):
+        loss_unreduced = super().get_loss(y_pred, y_true.float(), X, *args, **kwargs)
+        sample_weight = X['sample_weight']
+        sample_weight = sample_weight.to(loss_unreduced.device).unsqueeze(-1)
+        loss_reduced = (sample_weight * loss_unreduced).mean()
+        return loss_reduced
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+net = SampleWeightNN(
+    MLP(239),
+    max_epochs = 2,
+    optimizer = SGD,
+    lr = 0.01,
+    batch_size = 32,
+    train_split = None,
+    iterator_train__shuffle = True,
+    criterion = MSELoss,
+    device = device
+)
+#return net
+#from . import package_test_common as ptc
+#def test_expgrad_classification():
+print("Training unmitigated")
+unmitigated_predictor = net
+unmitigated_predictor.fit(X_train, Y_train)
+
+
+#--------------------------------- Grid Search -------------------- #
+
+estimator = net
+disparity_moment = DemographicParity()
+print("Here we go.\n")
+sweep = GridSearch(estimator, disparity_moment, grid_size = 71)
+sweep.fit(X_train, Y_train, sensitive_features = A_train)
+print("sweep fit done.\n")
+predictors = sweep.predictors_
+
+print("Going to iterate woo hoo! \n")
+
+errors, disparities = [], []
+for m in predictors:
+    def classifier(X): return m.predict(X)
+    error = ErrorRate()
+    print(error, "\n")
+    error.load_data(X_train, pd.Series(Y_train), sensitive_features = A_train)
+    disparity = DemographicParity()
+    disparity.load_data(X_train, pd.Series(Y_train), sensitive_features= A_train)
+    errors.append(error.gamma(classifier)[0])
+    disparities.append(disparity.gamma(classifier).max())
+
+print("All results voila: \n")
+all_results = pd.DataFrame({"predictor": predictors, "error": errors, "disparity": disparities})
+
+non_dominated = []
+for row in all_results.itertuples():
+    error_for_lower_or_eq_disparity = all_results["error"][all_results["disparity"] <= row.disparity]
+    if row.error <= error_for_lower_or_eq_disparity.min():
+        non_dominated.append(row.predictor)
+print(all_results)
+print("#################################################")
+print(non_dominated)
+
+
+'''
+from . import package_test_common as ptc
+def test_expgrad_classification():
+    estimator = create_model()
+    disparity_moment = DemographicParity()
+
+    ptc.run_expgrad_classification(estimator, disparity_moment)
+
+
+def test_gridsearch_classification():
+    estimator = create_model()
+    disparity_moment = DemographicParity()
+
+    ptc.run_gridsearch_classification(estimator, disparity_moment)
+
+
+def test_thresholdoptimizer_classification():
+    estimator = create_model()
+
+    ptc.run_thresholdoptimizer_classification(estimator)
 
 def train_model(train_dl, model):
     criterion = MSELoss()
@@ -178,11 +275,18 @@ def predict(row, model):
     yhat = yhat.detach().numpy()
     return yhat
 
+#print("About to start bias mitigation training: \n")
 
-model = MLP(243)
+#model = MLP(229)
 #print("Train model.\n")
 #train_model(train_dl, model)
 #print("Model trained!\n")
+
+#model.fit(train_d1.dataset.X(), train_d1.dataset.y())
+#print("Commencing Gridsearch \n")
+
+#sweep = GridSearch(model, constraints = DemographicParity, grid_size = 71)
+#sweep.fit(train_d1.dataset.X(), train_d1.dataset.y(), sensitive_features = test_d1.dataset.X())
 
 #mse = eval_model(test_dl, model)
 #if(mse == 0): print("this seems wrong bud\n")
@@ -194,3 +298,5 @@ model = MLP(243)
 
 #yhat = predict(row[0], model)
 #print("Pred: %.3f" %yhat)
+
+'''
