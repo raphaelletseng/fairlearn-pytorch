@@ -1,0 +1,2298 @@
+(90, 13)
+(90, 239)
+Type of X: <class 'pandas.core.frame.DataFrame'> 
+
+Y type: 
+<class 'method'>
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\cuda\__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  ..\c10\cuda\CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Training unmitigated
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.6624[0m  0.0758
+      2        [36m1.5878[0m  0.0130
+      3        [36m1.5164[0m  0.0160
+      4        [36m1.4517[0m  0.0110
+      5        [36m1.3868[0m  0.0130
+      6        [36m1.3280[0m  0.0110
+      7        [36m1.2718[0m  0.0060
+      8        [36m1.2174[0m  0.0080
+      9        [36m1.1630[0m  0.0060
+     10        [36m1.1139[0m  0.0080
+     11        [36m1.0707[0m  0.0090
+     12        [36m1.0253[0m  0.0060
+     13        [36m0.9821[0m  0.0090
+     14        [36m0.9403[0m  0.0100
+     15        [36m0.9008[0m  0.0060
+     16        [36m0.8674[0m  0.0080
+     17        [36m0.8330[0m  0.0110
+     18        [36m0.8004[0m  0.0070
+     19        [36m0.7704[0m  0.0080
+     20        [36m0.7414[0m  0.0090
+Here we go.
+
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.7460[0m  0.0070
+      2        [36m1.6031[0m  0.0060
+      3        [36m1.5140[0m  0.0070
+      4        [36m1.4145[0m  0.0070
+      5        [36m1.3443[0m  0.0070
+      6        [36m1.2699[0m  0.0070
+      7        [36m1.1938[0m  0.0060
+      8        [36m1.1299[0m  0.0080
+      9        [36m1.0779[0m  0.0070
+     10        [36m1.0425[0m  0.0050
+     11        [36m1.0190[0m  0.0100
+     12        [36m0.9968[0m  0.0050
+     13        [36m0.9698[0m  0.0060
+     14        [36m0.9415[0m  0.0090
+     15        [36m0.9157[0m  0.0050
+     16        [36m0.8985[0m  0.0100
+     17        [36m0.8804[0m  0.0050
+     18        [36m0.8707[0m  0.0120
+     19        [36m0.8617[0m  0.0100
+     20        [36m0.8506[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.4169[0m  0.0070
+      2        [36m1.3337[0m  0.0070
+      3        [36m1.2461[0m  0.0070
+      4        [36m1.1684[0m  0.0090
+      5        [36m1.0917[0m  0.0050
+      6        [36m1.0301[0m  0.0060
+      7        [36m1.0006[0m  0.0050
+      8        [36m0.9585[0m  0.0070
+      9        [36m0.9118[0m  0.0070
+     10        [36m0.8826[0m  0.0060
+     11        [36m0.8379[0m  0.0070
+     12        [36m0.8150[0m  0.0070
+     13        [36m0.7970[0m  0.0080
+     14        [36m0.7758[0m  0.0070
+     15        [36m0.7586[0m  0.0060
+     16        [36m0.7448[0m  0.0079
+     17        [36m0.7289[0m  0.0080
+     18        [36m0.7097[0m  0.0080
+     19        [36m0.7028[0m  0.0050
+     20        [36m0.6819[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.4862[0m  0.0060
+      2        [36m1.3806[0m  0.0060
+      3        [36m1.2912[0m  0.0080
+      4        [36m1.2168[0m  0.0060
+      5        [36m1.1279[0m  0.0100
+      6        [36m1.0582[0m  0.0140
+      7        [36m1.0066[0m  0.0130
+      8        [36m0.9600[0m  0.0110
+      9        [36m0.9328[0m  0.0100
+     10        [36m0.9010[0m  0.0090
+     11        [36m0.8764[0m  0.0110
+     12        [36m0.8516[0m  0.0130
+     13        [36m0.8289[0m  0.0120
+     14        [36m0.8123[0m  0.0090
+     15        [36m0.8013[0m  0.0080
+     16        [36m0.7882[0m  0.0080
+     17        [36m0.7710[0m  0.0080
+     18        [36m0.7519[0m  0.0060
+     19        [36m0.7342[0m  0.0060
+     20        [36m0.7235[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.5595[0m  0.0050
+      2        [36m1.4021[0m  0.0070
+      3        [36m1.3319[0m  0.0050
+      4        [36m1.2499[0m  0.0090
+      5        [36m1.1742[0m  0.0090
+      6        [36m1.1229[0m  0.0050
+      7        [36m1.0818[0m  0.0090
+      8        [36m1.0408[0m  0.0050
+      9        [36m1.0045[0m  0.0090
+     10        [36m0.9719[0m  0.0070
+     11        [36m0.9313[0m  0.0080
+     12        [36m0.9126[0m  0.0060
+     13        [36m0.8921[0m  0.0050
+     14        [36m0.8707[0m  0.0060
+     15        [36m0.8518[0m  0.0040
+     16        [36m0.8389[0m  0.0110
+     17        [36m0.8242[0m  0.0060
+     18        [36m0.8034[0m  0.0070
+     19        [36m0.7930[0m  0.0070
+     20        [36m0.7789[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.0788[0m  0.0060
+      2        [36m1.0209[0m  0.0070
+      3        [36m0.9721[0m  0.0060
+      4        [36m0.9288[0m  0.0080
+      5        [36m0.8906[0m  0.0060
+      6        [36m0.8572[0m  0.0100
+      7        [36m0.8284[0m  0.0050
+      8        [36m0.7847[0m  0.0070
+      9        [36m0.7501[0m  0.0090
+     10        [36m0.7186[0m  0.0050
+     11        [36m0.6861[0m  0.0080
+     12        [36m0.6601[0m  0.0050
+     13        [36m0.6412[0m  0.0080
+     14        [36m0.6239[0m  0.0070
+     15        [36m0.6113[0m  0.0080
+     16        [36m0.6000[0m  0.0090
+     17        [36m0.5873[0m  0.0059
+     18        [36m0.5780[0m  0.0080
+     19        [36m0.5601[0m  0.0060
+     20        [36m0.5453[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.1541[0m  0.0070
+      2        [36m1.0988[0m  0.0060
+      3        [36m1.0492[0m  0.0090
+      4        [36m0.9958[0m  0.0070
+      5        [36m0.9538[0m  0.0060
+      6        [36m0.9031[0m  0.0070
+      7        [36m0.8650[0m  0.0060
+      8        [36m0.8393[0m  0.0070
+      9        [36m0.8093[0m  0.0060
+     10        [36m0.7831[0m  0.0090
+     11        [36m0.7578[0m  0.0080
+     12        [36m0.7313[0m  0.0050
+     13        [36m0.7055[0m  0.0080
+     14        [36m0.6816[0m  0.0050
+     15        [36m0.6648[0m  0.0080
+     16        [36m0.6426[0m  0.0050
+     17        [36m0.6264[0m  0.0080
+     18        [36m0.6105[0m  0.0090
+     19        [36m0.5985[0m  0.0050
+     20        [36m0.5902[0m  0.0110
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.2272[0m  0.0080
+      2        [36m1.1630[0m  0.0070
+      3        [36m1.1018[0m  0.0060
+      4        [36m1.0469[0m  0.0070
+      5        [36m0.9932[0m  0.0150
+      6        [36m0.9381[0m  0.0120
+      7        [36m0.8915[0m  0.0080
+      8        [36m0.8624[0m  0.0130
+      9        [36m0.8190[0m  0.0110
+     10        [36m0.7923[0m  0.0110
+     11        [36m0.7747[0m  0.0110
+     12        [36m0.7562[0m  0.0100
+     13        [36m0.7199[0m  0.0120
+     14        [36m0.6990[0m  0.0100
+     15        [36m0.6785[0m  0.0080
+     16        [36m0.6546[0m  0.0100
+     17        [36m0.6371[0m  0.0050
+     18        [36m0.6279[0m  0.0060
+     19        [36m0.6153[0m  0.0100
+     20        [36m0.6055[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.3004[0m  0.0070
+      2        [36m1.2201[0m  0.0090
+      3        [36m1.1397[0m  0.0080
+      4        [36m1.0618[0m  0.0090
+      5        [36m0.9985[0m  0.0070
+      6        [36m0.9482[0m  0.0080
+      7        [36m0.9040[0m  0.0100
+      8        [36m0.8712[0m  0.0080
+      9        [36m0.8368[0m  0.0070
+     10        [36m0.7953[0m  0.0090
+     11        [36m0.7648[0m  0.0080
+     12        [36m0.7352[0m  0.0080
+     13        [36m0.7136[0m  0.0070
+     14        [36m0.6952[0m  0.0080
+     15        [36m0.6778[0m  0.0070
+     16        [36m0.6655[0m  0.0110
+     17        [36m0.6596[0m  0.0050
+     18        [36m0.6540[0m  0.0060
+     19        [36m0.6466[0m  0.0090
+     20        [36m0.6354[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.3875[0m  0.0100
+      2        [36m1.3285[0m  0.0080
+      3        [36m1.2602[0m  0.0050
+      4        [36m1.1891[0m  0.0718
+      5        [36m1.1382[0m  0.0070
+      6        [36m1.0778[0m  0.0070
+      7        [36m1.0367[0m  0.0080
+      8        [36m1.0023[0m  0.0080
+      9        [36m0.9609[0m  0.0060
+     10        [36m0.9240[0m  0.0110
+     11        [36m0.8795[0m  0.0090
+     12        [36m0.8587[0m  0.0060
+     13        [36m0.8363[0m  0.0160
+     14        [36m0.7967[0m  0.0070
+     15        [36m0.7751[0m  0.0100
+     16        [36m0.7587[0m  0.0060
+     17        [36m0.7426[0m  0.0060
+     18        [36m0.7308[0m  0.0090
+     19        [36m0.7180[0m  0.0060
+     20        [36m0.7062[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8925[0m  0.0070
+      2        [36m0.8522[0m  0.0060
+      3        [36m0.8165[0m  0.0100
+      4        [36m0.7800[0m  0.0050
+      5        [36m0.7447[0m  0.0080
+      6        [36m0.7155[0m  0.0070
+      7        [36m0.6899[0m  0.0070
+      8        [36m0.6660[0m  0.0070
+      9        [36m0.6442[0m  0.0070
+     10        [36m0.6231[0m  0.0090
+     11        [36m0.6021[0m  0.0080
+     12        [36m0.5835[0m  0.0070
+     13        [36m0.5635[0m  0.0100
+     14        [36m0.5500[0m  0.0150
+     15        [36m0.5364[0m  0.0100
+     16        [36m0.5222[0m  0.0060
+     17        [36m0.5098[0m  0.0120
+     18        [36m0.4983[0m  0.0120
+     19        [36m0.4836[0m  0.0130
+     20        [36m0.4739[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9180[0m  0.0060
+      2        [36m0.8865[0m  0.0080
+      3        [36m0.8498[0m  0.0060
+      4        [36m0.8060[0m  0.0090
+      5        [36m0.7712[0m  0.0060
+      6        [36m0.7340[0m  0.0070
+      7        [36m0.7115[0m  0.0070
+      8        [36m0.6897[0m  0.0070
+      9        [36m0.6682[0m  0.0090
+     10        [36m0.6428[0m  0.0080
+     11        [36m0.6187[0m  0.0060
+     12        [36m0.5982[0m  0.0080
+     13        [36m0.5800[0m  0.0060
+     14        [36m0.5595[0m  0.0100
+     15        [36m0.5449[0m  0.0060
+     16        [36m0.5305[0m  0.0080
+     17        [36m0.5157[0m  0.0080
+     18        [36m0.5013[0m  0.0050
+     19        [36m0.4902[0m  0.0090
+     20        [36m0.4770[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9413[0m  0.0090
+      2        [36m0.9045[0m  0.0090
+      3        [36m0.8653[0m  0.0061
+      4        [36m0.8282[0m  0.0110
+      5        [36m0.7940[0m  0.0110
+      6        [36m0.7586[0m  0.0070
+      7        [36m0.7355[0m  0.0060
+      8        [36m0.7121[0m  0.0070
+      9        [36m0.6864[0m  0.0060
+     10        [36m0.6639[0m  0.0060
+     11        [36m0.6419[0m  0.0070
+     12        [36m0.6214[0m  0.0060
+     13        [36m0.5998[0m  0.0070
+     14        [36m0.5802[0m  0.0090
+     15        [36m0.5637[0m  0.0080
+     16        [36m0.5471[0m  0.0070
+     17        [36m0.5330[0m  0.0060
+     18        [36m0.5184[0m  0.0070
+     19        [36m0.5069[0m  0.0050
+     20        [36m0.4941[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9687[0m  0.0050
+      2        [36m0.9327[0m  0.0090
+      3        [36m0.8905[0m  0.0060
+      4        [36m0.8506[0m  0.0100
+      5        [36m0.8227[0m  0.0080
+      6        [36m0.7915[0m  0.0060
+      7        [36m0.7606[0m  0.0100
+      8        [36m0.7263[0m  0.0060
+      9        [36m0.6940[0m  0.0080
+     10        [36m0.6607[0m  0.0050
+     11        [36m0.6393[0m  0.0080
+     12        [36m0.6225[0m  0.0070
+     13        [36m0.5981[0m  0.0070
+     14        [36m0.5830[0m  0.0070
+     15        [36m0.5676[0m  0.0070
+     16        [36m0.5560[0m  0.0080
+     17        [36m0.5419[0m  0.0070
+     18        [36m0.5246[0m  0.0050
+     19        [36m0.5141[0m  0.0070
+     20        [36m0.5010[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.0491[0m  0.0070
+      2        [36m1.0019[0m  0.0060
+      3        [36m0.9652[0m  0.0060
+      4        [36m0.9239[0m  0.0060
+      5        [36m0.8700[0m  0.0080
+      6        [36m0.8239[0m  0.0070
+      7        [36m0.7930[0m  0.0060
+      8        [36m0.7629[0m  0.0070
+      9        [36m0.7310[0m  0.0060
+     10        [36m0.7115[0m  0.0080
+     11        [36m0.6894[0m  0.0089
+     12        [36m0.6588[0m  0.0060
+     13        [36m0.6411[0m  0.0080
+     14        [36m0.6231[0m  0.0050
+     15        [36m0.6008[0m  0.0080
+     16        [36m0.5865[0m  0.0060
+     17        [36m0.5725[0m  0.0090
+     18        [36m0.5573[0m  0.0110
+     19        [36m0.5375[0m  0.0060
+     20        [36m0.5238[0m  0.0180
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.1330[0m  0.0100
+      2        [36m1.0860[0m  0.0140
+      3        [36m1.0363[0m  0.0180
+      4        [36m0.9924[0m  0.0080
+      5        [36m0.9584[0m  0.0070
+      6        [36m0.9184[0m  0.0060
+      7        [36m0.8712[0m  0.0070
+      8        [36m0.8307[0m  0.0100
+      9        [36m0.8086[0m  0.0070
+     10        [36m0.7836[0m  0.0059
+     11        [36m0.7606[0m  0.0070
+     12        [36m0.7279[0m  0.0070
+     13        [36m0.6940[0m  0.0100
+     14        [36m0.6633[0m  0.0070
+     15        [36m0.6460[0m  0.0050
+     16        [36m0.6343[0m  0.0090
+     17        [36m0.6082[0m  0.0050
+     18        [36m0.5879[0m  0.0090
+     19        [36m0.5742[0m  0.0060
+     20        [36m0.5529[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.2168[0m  0.0070
+      2        [36m1.1553[0m  0.0060
+      3        [36m1.0869[0m  0.0090
+      4        [36m1.0400[0m  0.0060
+      5        [36m0.9874[0m  0.0090
+      6        [36m0.9481[0m  0.0080
+      7        [36m0.9153[0m  0.0060
+      8        [36m0.8742[0m  0.0100
+      9        [36m0.8390[0m  0.0070
+     10        [36m0.8133[0m  0.0070
+     11        [36m0.7865[0m  0.0079
+     12        [36m0.7516[0m  0.0070
+     13        [36m0.7234[0m  0.0060
+     14        [36m0.6998[0m  0.0079
+     15        [36m0.6784[0m  0.0060
+     16        [36m0.6596[0m  0.0080
+     17        [36m0.6440[0m  0.0070
+     18        [36m0.6318[0m  0.0060
+     19        [36m0.6175[0m  0.0070
+     20        [36m0.6055[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7693[0m  0.0060
+      2        [36m0.7365[0m  0.0080
+      3        [36m0.7085[0m  0.0060
+      4        [36m0.6812[0m  0.0090
+      5        [36m0.6574[0m  0.0050
+      6        [36m0.6324[0m  0.0090
+      7        [36m0.6108[0m  0.0050
+      8        [36m0.5902[0m  0.0090
+      9        [36m0.5682[0m  0.0070
+     10        [36m0.5488[0m  0.0070
+     11        [36m0.5316[0m  0.0070
+     12        [36m0.5164[0m  0.0050
+     13        [36m0.5003[0m  0.0110
+     14        [36m0.4835[0m  0.0090
+     15        [36m0.4716[0m  0.0050
+     16        [36m0.4610[0m  0.0070
+     17        [36m0.4504[0m  0.0060
+     18        [36m0.4383[0m  0.0070
+     19        [36m0.4268[0m  0.0080
+     20        [36m0.4156[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7933[0m  0.0060
+      2        [36m0.7600[0m  0.0070
+      3        [36m0.7303[0m  0.0060
+      4        [36m0.7026[0m  0.0080
+      5        [36m0.6713[0m  0.0050
+      6        [36m0.6476[0m  0.0060
+      7        [36m0.6213[0m  0.0060
+      8        [36m0.5974[0m  0.0060
+      9        [36m0.5737[0m  0.0090
+     10        [36m0.5550[0m  0.0070
+     11        [36m0.5355[0m  0.0080
+     12        [36m0.5201[0m  0.0070
+     13        [36m0.5043[0m  0.0070
+     14        [36m0.4908[0m  0.0090
+     15        [36m0.4763[0m  0.0050
+     16        [36m0.4620[0m  0.0080
+     17        [36m0.4488[0m  0.0070
+     18        [36m0.4363[0m  0.0150
+     19        [36m0.4231[0m  0.0150
+     20        [36m0.4110[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8175[0m  0.0120
+      2        [36m0.7798[0m  0.0090
+      3        [36m0.7490[0m  0.0050
+      4        [36m0.7203[0m  0.0080
+      5        [36m0.6934[0m  0.0070
+      6        [36m0.6686[0m  0.0100
+      7        [36m0.6406[0m  0.0070
+      8        [36m0.6154[0m  0.0060
+      9        [36m0.5917[0m  0.0070
+     10        [36m0.5697[0m  0.0050
+     11        [36m0.5512[0m  0.0110
+     12        [36m0.5374[0m  0.0060
+     13        [36m0.5230[0m  0.0080
+     14        [36m0.5061[0m  0.0060
+     15        [36m0.4873[0m  0.0080
+     16        [36m0.4722[0m  0.0110
+     17        [36m0.4597[0m  0.0050
+     18        [36m0.4470[0m  0.0060
+     19        [36m0.4367[0m  0.0060
+     20        [36m0.4255[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8411[0m  0.0070
+      2        [36m0.8031[0m  0.0090
+      3        [36m0.7693[0m  0.0279
+      4        [36m0.7395[0m  0.0080
+      5        [36m0.7085[0m  0.0109
+      6        [36m0.6828[0m  0.0090
+      7        [36m0.6599[0m  0.0070
+      8        [36m0.6318[0m  0.0070
+      9        [36m0.6069[0m  0.0110
+     10        [36m0.5853[0m  0.0130
+     11        [36m0.5662[0m  0.0309
+     12        [36m0.5484[0m  0.0140
+     13        [36m0.5329[0m  0.0130
+     14        [36m0.5160[0m  0.0120
+     15        [36m0.5037[0m  0.0120
+     16        [36m0.4904[0m  0.0130
+     17        [36m0.4776[0m  0.0349
+     18        [36m0.4625[0m  0.0160
+     19        [36m0.4538[0m  0.0150
+     20        [36m0.4430[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8747[0m  0.0060
+      2        [36m0.8396[0m  0.0060
+      3        [36m0.8049[0m  0.0070
+      4        [36m0.7723[0m  0.0060
+      5        [36m0.7380[0m  0.0060
+      6        [36m0.7094[0m  0.0060
+      7        [36m0.6852[0m  0.0060
+      8        [36m0.6614[0m  0.0060
+      9        [36m0.6337[0m  0.0080
+     10        [36m0.6130[0m  0.0080
+     11        [36m0.5886[0m  0.0060
+     12        [36m0.5706[0m  0.0080
+     13        [36m0.5429[0m  0.0060
+     14        [36m0.5277[0m  0.0050
+     15        [36m0.5161[0m  0.0080
+     16        [36m0.5024[0m  0.0060
+     17        [36m0.4885[0m  0.0100
+     18        [36m0.4768[0m  0.0050
+     19        [36m0.4635[0m  0.0110
+     20        [36m0.4514[0m  0.0130
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9072[0m  0.0120
+      2        [36m0.8632[0m  0.0120
+      3        [36m0.8188[0m  0.0130
+      4        [36m0.7917[0m  0.0120
+      5        [36m0.7643[0m  0.0060
+      6        [36m0.7320[0m  0.0080
+      7        [36m0.6985[0m  0.0050
+      8        [36m0.6722[0m  0.0080
+      9        [36m0.6491[0m  0.0060
+     10        [36m0.6274[0m  0.0120
+     11        [36m0.6053[0m  0.0080
+     12        [36m0.5831[0m  0.0060
+     13        [36m0.5642[0m  0.0100
+     14        [36m0.5453[0m  0.0070
+     15        [36m0.5276[0m  0.0070
+     16        [36m0.5144[0m  0.0080
+     17        [36m0.5018[0m  0.0050
+     18        [36m0.4903[0m  0.0090
+     19        [36m0.4786[0m  0.0060
+     20        [36m0.4691[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9412[0m  0.0060
+      2        [36m0.9036[0m  0.0060
+      3        [36m0.8661[0m  0.0070
+      4        [36m0.8266[0m  0.0100
+      5        [36m0.7966[0m  0.0090
+      6        [36m0.7576[0m  0.0070
+      7        [36m0.7278[0m  0.0060
+      8        [36m0.6935[0m  0.0080
+      9        [36m0.6701[0m  0.0060
+     10        [36m0.6471[0m  0.0060
+     11        [36m0.6271[0m  0.0060
+     12        [36m0.6087[0m  0.0080
+     13        [36m0.5898[0m  0.0080
+     14        [36m0.5727[0m  0.0050
+     15        [36m0.5593[0m  0.0070
+     16        [36m0.5450[0m  0.0060
+     17        [36m0.5261[0m  0.0080
+     18        [36m0.5142[0m  0.0080
+     19        [36m0.5011[0m  0.0050
+     20        [36m0.4855[0m  0.0120
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9740[0m  0.0070
+      2        [36m0.9287[0m  0.0060
+      3        [36m0.8872[0m  0.0080
+      4        [36m0.8465[0m  0.0070
+      5        [36m0.8094[0m  0.0080
+      6        [36m0.7665[0m  0.0070
+      7        [36m0.7360[0m  0.0070
+      8        [36m0.7148[0m  0.0090
+      9        [36m0.6800[0m  0.0060
+     10        [36m0.6533[0m  0.0060
+     11        [36m0.6355[0m  0.0060
+     12        [36m0.6135[0m  0.0070
+     13        [36m0.5963[0m  0.0070
+     14        [36m0.5785[0m  0.0070
+     15        [36m0.5594[0m  0.0070
+     16        [36m0.5382[0m  0.0070
+     17        [36m0.5278[0m  0.0060
+     18        [36m0.5152[0m  0.0080
+     19        [36m0.5031[0m  0.0050
+     20        [36m0.4935[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.0459[0m  0.0070
+      2        [36m0.9949[0m  0.0060
+      3        [36m0.9589[0m  0.0090
+      4        [36m0.9232[0m  0.0050
+      5        [36m0.8868[0m  0.0080
+      6        [36m0.8545[0m  0.0050
+      7        [36m0.8174[0m  0.0080
+      8        [36m0.7758[0m  0.0080
+      9        [36m0.7479[0m  0.0060
+     10        [36m0.7175[0m  0.0090
+     11        [36m0.6952[0m  0.0050
+     12        [36m0.6643[0m  0.0090
+     13        [36m0.6449[0m  0.0070
+     14        [36m0.6231[0m  0.0070
+     15        [36m0.6057[0m  0.0070
+     16        [36m0.5837[0m  0.0070
+     17        [36m0.5599[0m  0.0099
+     18        [36m0.5436[0m  0.0080
+     19        [36m0.5283[0m  0.0110
+     20        [36m0.5177[0m  0.0110
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6739[0m  0.0130
+      2        [36m0.6478[0m  0.0130
+      3        [36m0.6245[0m  0.0070
+      4        [36m0.6049[0m  0.0080
+      5        [36m0.5856[0m  0.0060
+      6        [36m0.5660[0m  0.0050
+      7        [36m0.5468[0m  0.0060
+      8        [36m0.5293[0m  0.0050
+      9        [36m0.5116[0m  0.0070
+     10        [36m0.4947[0m  0.0050
+     11        [36m0.4818[0m  0.0070
+     12        [36m0.4674[0m  0.0050
+     13        [36m0.4534[0m  0.0070
+     14        [36m0.4404[0m  0.0060
+     15        [36m0.4287[0m  0.0090
+     16        [36m0.4169[0m  0.0090
+     17        [36m0.4060[0m  0.0060
+     18        [36m0.3956[0m  0.0060
+     19        [36m0.3855[0m  0.0070
+     20        [36m0.3761[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6919[0m  0.0070
+      2        [36m0.6656[0m  0.0050
+      3        [36m0.6415[0m  0.0070
+      4        [36m0.6183[0m  0.0050
+      5        [36m0.5970[0m  0.0070
+      6        [36m0.5770[0m  0.0050
+      7        [36m0.5581[0m  0.0090
+      8        [36m0.5419[0m  0.0050
+      9        [36m0.5244[0m  0.0100
+     10        [36m0.5072[0m  0.0050
+     11        [36m0.4898[0m  0.0060
+     12        [36m0.4736[0m  0.0050
+     13        [36m0.4586[0m  0.0080
+     14        [36m0.4442[0m  0.0080
+     15        [36m0.4322[0m  0.0050
+     16        [36m0.4203[0m  0.0080
+     17        [36m0.4087[0m  0.0060
+     18        [36m0.3980[0m  0.0060
+     19        [36m0.3878[0m  0.0070
+     20        [36m0.3783[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7097[0m  0.0060
+      2        [36m0.6830[0m  0.0060
+      3        [36m0.6607[0m  0.0090
+      4        [36m0.6393[0m  0.0105
+      5        [36m0.6182[0m  0.0070
+      6        [36m0.5970[0m  0.0090
+      7        [36m0.5789[0m  0.0090
+      8        [36m0.5594[0m  0.0070
+      9        [36m0.5409[0m  0.0070
+     10        [36m0.5236[0m  0.0050
+     11        [36m0.5075[0m  0.0070
+     12        [36m0.4927[0m  0.0050
+     13        [36m0.4788[0m  0.0060
+     14        [36m0.4657[0m  0.0080
+     15        [36m0.4530[0m  0.0060
+     16        [36m0.4406[0m  0.0090
+     17        [36m0.4292[0m  0.0060
+     18        [36m0.4173[0m  0.0110
+     19        [36m0.4063[0m  0.0130
+     20        [36m0.3969[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7279[0m  0.0050
+      2        [36m0.7034[0m  0.0070
+      3        [36m0.6772[0m  0.0080
+      4        [36m0.6531[0m  0.0070
+      5        [36m0.6310[0m  0.0060
+      6        [36m0.6112[0m  0.0070
+      7        [36m0.5914[0m  0.0069
+      8        [36m0.5737[0m  0.0060
+      9        [36m0.5555[0m  0.0090
+     10        [36m0.5379[0m  0.0080
+     11        [36m0.5197[0m  0.0060
+     12        [36m0.5042[0m  0.0060
+     13        [36m0.4908[0m  0.0070
+     14        [36m0.4753[0m  0.0080
+     15        [36m0.4634[0m  0.0060
+     16        [36m0.4515[0m  0.0060
+     17        [36m0.4395[0m  0.0080
+     18        [36m0.4266[0m  0.0050
+     19        [36m0.4153[0m  0.0100
+     20        [36m0.4048[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7543[0m  0.0100
+      2        [36m0.7245[0m  0.0130
+      3        [36m0.6985[0m  0.0090
+      4        [36m0.6717[0m  0.0120
+      5        [36m0.6463[0m  0.0100
+      6        [36m0.6190[0m  0.0130
+      7        [36m0.5973[0m  0.0120
+      8        [36m0.5770[0m  0.0100
+      9        [36m0.5571[0m  0.0100
+     10        [36m0.5397[0m  0.0160
+     11        [36m0.5235[0m  0.0080
+     12        [36m0.5063[0m  0.0100
+     13        [36m0.4922[0m  0.0110
+     14        [36m0.4751[0m  0.0090
+     15        [36m0.4630[0m  0.0060
+     16        [36m0.4491[0m  0.0090
+     17        [36m0.4381[0m  0.0060
+     18        [36m0.4261[0m  0.0060
+     19        [36m0.4151[0m  0.0080
+     20        [36m0.4056[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7844[0m  0.0060
+      2        [36m0.7522[0m  0.0050
+      3        [36m0.7222[0m  0.0080
+      4        [36m0.6956[0m  0.0050
+      5        [36m0.6699[0m  0.0090
+      6        [36m0.6495[0m  0.0070
+      7        [36m0.6230[0m  0.0070
+      8        [36m0.6024[0m  0.0060
+      9        [36m0.5815[0m  0.0060
+     10        [36m0.5629[0m  0.0080
+     11        [36m0.5449[0m  0.0070
+     12        [36m0.5253[0m  0.0060
+     13        [36m0.5086[0m  0.0060
+     14        [36m0.4947[0m  0.0070
+     15        [36m0.4800[0m  0.0070
+     16        [36m0.4670[0m  0.0080
+     17        [36m0.4525[0m  0.0060
+     18        [36m0.4374[0m  0.0090
+     19        [36m0.4277[0m  0.0050
+     20        [36m0.4196[0m  0.0110
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8172[0m  0.0070
+      2        [36m0.7802[0m  0.0050
+      3        [36m0.7456[0m  0.0100
+      4        [36m0.7109[0m  0.0060
+      5        [36m0.6848[0m  0.0080
+      6        [36m0.6622[0m  0.0070
+      7        [36m0.6382[0m  0.0070
+      8        [36m0.6128[0m  0.0070
+      9        [36m0.5892[0m  0.0060
+     10        [36m0.5670[0m  0.0100
+     11        [36m0.5474[0m  0.0080
+     12        [36m0.5313[0m  0.0080
+     13        [36m0.5167[0m  0.0069
+     14        [36m0.5030[0m  0.0070
+     15        [36m0.4904[0m  0.0060
+     16        [36m0.4760[0m  0.0070
+     17        [36m0.4655[0m  0.0060
+     18        [36m0.4511[0m  0.0100
+     19        [36m0.4385[0m  0.0080
+     20        [36m0.4299[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8511[0m  0.0060
+      2        [36m0.8178[0m  0.0060
+      3        [36m0.7831[0m  0.0081
+      4        [36m0.7536[0m  0.0060
+      5        [36m0.7237[0m  0.0090
+      6        [36m0.6932[0m  0.0060
+      7        [36m0.6686[0m  0.0100
+      8        [36m0.6466[0m  0.0070
+      9        [36m0.6197[0m  0.0070
+     10        [36m0.5992[0m  0.0070
+     11        [36m0.5768[0m  0.0070
+     12        [36m0.5573[0m  0.0069
+     13        [36m0.5406[0m  0.0070
+     14        [36m0.5230[0m  0.0070
+     15        [36m0.5097[0m  0.0060
+     16        [36m0.4977[0m  0.0099
+     17        [36m0.4814[0m  0.0069
+     18        [36m0.4698[0m  0.0070
+     19        [36m0.4576[0m  0.0070
+     20        [36m0.4472[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8847[0m  0.0110
+      2        [36m0.8523[0m  0.0110
+      3        [36m0.8130[0m  0.0080
+      4        [36m0.7817[0m  0.0090
+      5        [36m0.7513[0m  0.0120
+      6        [36m0.7239[0m  0.0120
+      7        [36m0.7004[0m  0.0150
+      8        [36m0.6789[0m  0.0100
+      9        [36m0.6542[0m  0.0080
+     10        [36m0.6275[0m  0.0100
+     11        [36m0.6031[0m  0.0060
+     12        [36m0.5832[0m  0.0100
+     13        [36m0.5680[0m  0.0060
+     14        [36m0.5551[0m  0.0100
+     15        [36m0.5396[0m  0.0120
+     16        [36m0.5231[0m  0.0060
+     17        [36m0.5121[0m  0.0070
+     18        [36m0.4958[0m  0.0060
+     19        [36m0.4820[0m  0.0070
+     20        [36m0.4681[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9176[0m  0.0050
+      2        [36m0.8817[0m  0.0070
+      3        [36m0.8433[0m  0.0060
+      4        [36m0.8154[0m  0.0080
+      5        [36m0.7823[0m  0.0060
+      6        [36m0.7495[0m  0.0080
+      7        [36m0.7217[0m  0.0070
+      8        [36m0.6870[0m  0.0080
+      9        [36m0.6649[0m  0.0080
+     10        [36m0.6434[0m  0.0060
+     11        [36m0.6204[0m  0.0100
+     12        [36m0.6050[0m  0.0050
+     13        [36m0.5901[0m  0.0110
+     14        [36m0.5762[0m  0.0100
+     15        [36m0.5532[0m  0.0050
+     16        [36m0.5335[0m  0.0070
+     17        [36m0.5196[0m  0.0050
+     18        [36m0.5069[0m  0.0080
+     19        [36m0.4951[0m  0.0060
+     20        [36m0.4806[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9494[0m  0.0060
+      2        [36m0.8994[0m  0.0060
+      3        [36m0.8607[0m  0.0060
+      4        [36m0.8208[0m  0.0060
+      5        [36m0.7920[0m  0.0060
+      6        [36m0.7627[0m  0.0070
+      7        [36m0.7334[0m  0.0060
+      8        [36m0.7036[0m  0.0080
+      9        [36m0.6779[0m  0.0060
+     10        [36m0.6494[0m  0.0080
+     11        [36m0.6257[0m  0.0050
+     12        [36m0.6075[0m  0.0080
+     13        [36m0.5918[0m  0.0050
+     14        [36m0.5775[0m  0.0060
+     15        [36m0.5588[0m  0.0050
+     16        [36m0.5383[0m  0.0060
+     17        [36m0.5262[0m  0.0089
+     18        [36m0.5133[0m  0.0050
+     19        [36m0.4978[0m  0.0090
+     20        [36m0.4838[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7896[0m  0.0050
+      2        [36m0.7551[0m  0.0100
+      3        [36m0.7234[0m  0.0060
+      4        [36m0.6983[0m  0.0080
+      5        [36m0.6700[0m  0.0070
+      6        [36m0.6454[0m  0.0090
+      7        [36m0.6224[0m  0.0069
+      8        [36m0.5984[0m  0.0060
+      9        [36m0.5803[0m  0.0080
+     10        [36m0.5640[0m  0.0060
+     11        [36m0.5473[0m  0.0060
+     12        [36m0.5281[0m  0.0060
+     13        [36m0.5122[0m  0.0100
+     14        [36m0.4982[0m  0.0070
+     15        [36m0.4871[0m  0.0070
+     16        [36m0.4754[0m  0.0060
+     17        [36m0.4642[0m  0.0070
+     18        [36m0.4532[0m  0.0080
+     19        [36m0.4414[0m  0.0080
+     20        [36m0.4330[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7373[0m  0.0100
+      2        [36m0.7087[0m  0.0110
+      3        [36m0.6811[0m  0.0120
+      4        [36m0.6598[0m  0.0140
+      5        [36m0.6373[0m  0.0120
+      6        [36m0.6145[0m  0.0130
+      7        [36m0.5921[0m  0.0140
+      8        [36m0.5716[0m  0.0120
+      9        [36m0.5516[0m  0.0130
+     10        [36m0.5359[0m  0.0130
+     11        [36m0.5196[0m  0.0090
+     12        [36m0.5036[0m  0.0060
+     13        [36m0.4867[0m  0.0080
+     14        [36m0.4716[0m  0.0060
+     15        [36m0.4604[0m  0.0070
+     16        [36m0.4475[0m  0.0070
+     17        [36m0.4348[0m  0.0080
+     18        [36m0.4221[0m  0.0060
+     19        [36m0.4131[0m  0.0070
+     20        [36m0.4054[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6846[0m  0.0070
+      2        [36m0.6584[0m  0.0070
+      3        [36m0.6356[0m  0.0070
+      4        [36m0.6137[0m  0.0050
+      5        [36m0.5916[0m  0.0080
+      6        [36m0.5740[0m  0.0060
+      7        [36m0.5566[0m  0.0090
+      8        [36m0.5381[0m  0.0060
+      9        [36m0.5211[0m  0.0120
+     10        [36m0.5044[0m  0.0110
+     11        [36m0.4869[0m  0.0150
+     12        [36m0.4710[0m  0.0120
+     13        [36m0.4571[0m  0.0209
+     14        [36m0.4467[0m  0.0130
+     15        [36m0.4339[0m  0.0120
+     16        [36m0.4238[0m  0.0120
+     17        [36m0.4143[0m  0.0110
+     18        [36m0.4038[0m  0.0120
+     19        [36m0.3944[0m  0.0120
+     20        [36m0.3856[0m  0.0130
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6323[0m  0.0110
+      2        [36m0.6131[0m  0.0120
+      3        [36m0.5909[0m  0.0110
+      4        [36m0.5700[0m  0.0090
+      5        [36m0.5499[0m  0.0090
+      6        [36m0.5335[0m  0.0100
+      7        [36m0.5144[0m  0.0130
+      8        [36m0.4990[0m  0.0100
+      9        [36m0.4846[0m  0.0110
+     10        [36m0.4708[0m  0.0060
+     11        [36m0.4571[0m  0.0110
+     12        [36m0.4453[0m  0.0080
+     13        [36m0.4319[0m  0.0080
+     14        [36m0.4203[0m  0.0070
+     15        [36m0.4081[0m  0.0090
+     16        [36m0.3984[0m  0.0090
+     17        [36m0.3877[0m  0.0090
+     18        [36m0.3773[0m  0.0090
+     19        [36m0.3675[0m  0.0060
+     20        [36m0.3587[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6590[0m  0.0090
+      2        [36m0.6359[0m  0.0060
+      3        [36m0.6140[0m  0.0095
+      4        [36m0.5926[0m  0.0120
+      5        [36m0.5720[0m  0.0160
+      6        [36m0.5538[0m  0.0115
+      7        [36m0.5346[0m  0.0130
+      8        [36m0.5198[0m  0.0120
+      9        [36m0.5051[0m  0.0130
+     10        [36m0.4913[0m  0.0120
+     11        [36m0.4772[0m  0.0150
+     12        [36m0.4608[0m  0.0150
+     13        [36m0.4461[0m  0.0120
+     14        [36m0.4344[0m  0.0100
+     15        [36m0.4219[0m  0.0090
+     16        [36m0.4102[0m  0.0080
+     17        [36m0.4004[0m  0.0130
+     18        [36m0.3908[0m  0.0090
+     19        [36m0.3817[0m  0.0080
+     20        [36m0.3731[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6860[0m  0.0110
+      2        [36m0.6613[0m  0.0150
+      3        [36m0.6397[0m  0.0100
+      4        [36m0.6172[0m  0.0110
+      5        [36m0.5961[0m  0.0110
+      6        [36m0.5793[0m  0.0100
+      7        [36m0.5625[0m  0.0100
+      8        [36m0.5443[0m  0.0110
+      9        [36m0.5284[0m  0.0150
+     10        [36m0.5122[0m  0.0120
+     11        [36m0.4965[0m  0.0120
+     12        [36m0.4807[0m  0.0110
+     13        [36m0.4659[0m  0.0110
+     14        [36m0.4531[0m  0.0130
+     15        [36m0.4388[0m  0.0110
+     16        [36m0.4272[0m  0.0090
+     17        [36m0.4165[0m  0.0120
+     18        [36m0.4073[0m  0.0060
+     19        [36m0.3974[0m  0.0110
+     20        [36m0.3871[0m  0.0140
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7128[0m  0.0110
+      2        [36m0.6853[0m  0.0110
+      3        [36m0.6593[0m  0.0110
+      4        [36m0.6339[0m  0.0120
+      5        [36m0.6117[0m  0.0140
+      6        [36m0.5927[0m  0.0120
+      7        [36m0.5730[0m  0.0120
+      8        [36m0.5550[0m  0.0110
+      9        [36m0.5388[0m  0.0120
+     10        [36m0.5233[0m  0.0110
+     11        [36m0.5076[0m  0.0090
+     12        [36m0.4942[0m  0.0090
+     13        [36m0.4807[0m  0.0070
+     14        [36m0.4668[0m  0.0100
+     15        [36m0.4544[0m  0.0080
+     16        [36m0.4415[0m  0.0080
+     17        [36m0.4293[0m  0.0070
+     18        [36m0.4187[0m  0.0060
+     19        [36m0.4080[0m  0.0090
+     20        [36m0.3977[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7398[0m  0.0150
+      2        [36m0.7106[0m  0.0170
+      3        [36m0.6855[0m  0.0140
+      4        [36m0.6604[0m  0.0379
+      5        [36m0.6373[0m  0.0130
+      6        [36m0.6179[0m  0.0140
+      7        [36m0.6000[0m  0.0120
+      8        [36m0.5828[0m  0.0100
+      9        [36m0.5669[0m  0.0110
+     10        [36m0.5510[0m  0.0070
+     11        [36m0.5327[0m  0.0060
+     12        [36m0.5180[0m  0.0080
+     13        [36m0.5010[0m  0.0060
+     14        [36m0.4863[0m  0.0060
+     15        [36m0.4721[0m  0.0060
+     16        [36m0.4563[0m  0.0060
+     17        [36m0.4451[0m  0.0090
+     18        [36m0.4356[0m  0.0070
+     19        [36m0.4232[0m  0.0100
+     20        [36m0.4132[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7668[0m  0.0060
+      2        [36m0.7351[0m  0.0090
+      3        [36m0.7096[0m  0.0050
+      4        [36m0.6864[0m  0.0090
+      5        [36m0.6620[0m  0.0050
+      6        [36m0.6363[0m  0.0080
+      7        [36m0.6154[0m  0.0080
+      8        [36m0.5919[0m  0.0060
+      9        [36m0.5719[0m  0.0070
+     10        [36m0.5537[0m  0.0060
+     11        [36m0.5369[0m  0.0080
+     12        [36m0.5196[0m  0.0050
+     13        [36m0.5026[0m  0.0060
+     14        [36m0.4908[0m  0.0060
+     15        [36m0.4788[0m  0.0070
+     16        [36m0.4662[0m  0.0070
+     17        [36m0.4554[0m  0.0060
+     18        [36m0.4413[0m  0.0080
+     19        [36m0.4305[0m  0.0070
+     20        [36m0.4200[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7946[0m  0.0080
+      2        [36m0.7681[0m  0.0050
+      3        [36m0.7385[0m  0.0080
+      4        [36m0.7140[0m  0.0050
+      5        [36m0.6893[0m  0.0080
+      6        [36m0.6657[0m  0.0050
+      7        [36m0.6431[0m  0.0100
+      8        [36m0.6220[0m  0.0090
+      9        [36m0.6011[0m  0.0050
+     10        [36m0.5827[0m  0.0120
+     11        [36m0.5639[0m  0.0090
+     12        [36m0.5447[0m  0.0070
+     13        [36m0.5294[0m  0.0080
+     14        [36m0.5121[0m  0.0100
+     15        [36m0.4969[0m  0.0070
+     16        [36m0.4825[0m  0.0080
+     17        [36m0.4704[0m  0.0070
+     18        [36m0.4585[0m  0.0070
+     19        [36m0.4466[0m  0.0060
+     20        [36m0.4326[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8273[0m  0.0060
+      2        [36m0.7965[0m  0.0070
+      3        [36m0.7701[0m  0.0050
+      4        [36m0.7399[0m  0.0070
+      5        [36m0.7165[0m  0.0080
+      6        [36m0.6926[0m  0.0050
+      7        [36m0.6673[0m  0.0090
+      8        [36m0.6427[0m  0.0050
+      9        [36m0.6212[0m  0.0090
+     10        [36m0.5992[0m  0.0060
+     11        [36m0.5828[0m  0.0110
+     12        [36m0.5593[0m  0.0100
+     13        [36m0.5427[0m  0.0060
+     14        [36m0.5260[0m  0.0140
+     15        [36m0.5127[0m  0.0150
+     16        [36m0.4953[0m  0.0150
+     17        [36m0.4814[0m  0.0120
+     18        [36m0.4702[0m  0.0090
+     19        [36m0.4580[0m  0.0110
+     20        [36m0.4448[0m  0.0110
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8613[0m  0.0060
+      2        [36m0.8316[0m  0.0070
+      3        [36m0.7928[0m  0.0080
+      4        [36m0.7617[0m  0.0060
+      5        [36m0.7324[0m  0.0080
+      6        [36m0.7056[0m  0.0050
+      7        [36m0.6785[0m  0.0080
+      8        [36m0.6581[0m  0.0060
+      9        [36m0.6399[0m  0.0070
+     10        [36m0.6194[0m  0.0060
+     11        [36m0.5956[0m  0.0070
+     12        [36m0.5763[0m  0.0070
+     13        [36m0.5592[0m  0.0050
+     14        [36m0.5407[0m  0.0100
+     15        [36m0.5239[0m  0.0060
+     16        [36m0.5075[0m  0.0080
+     17        [36m0.4919[0m  0.0060
+     18        [36m0.4779[0m  0.0070
+     19        [36m0.4679[0m  0.0080
+     20        [36m0.4536[0m  0.0179
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8933[0m  0.0090
+      2        [36m0.8561[0m  0.0150
+      3        [36m0.8242[0m  0.0110
+      4        [36m0.7978[0m  0.0100
+      5        [36m0.7713[0m  0.0090
+      6        [36m0.7389[0m  0.0080
+      7        [36m0.7092[0m  0.0190
+      8        [36m0.6805[0m  0.0130
+      9        [36m0.6594[0m  0.0130
+     10        [36m0.6369[0m  0.0110
+     11        [36m0.6205[0m  0.0189
+     12        [36m0.6027[0m  0.0120
+     13        [36m0.5840[0m  0.0110
+     14        [36m0.5677[0m  0.0110
+     15        [36m0.5534[0m  0.0100
+     16        [36m0.5341[0m  0.0090
+     17        [36m0.5176[0m  0.0110
+     18        [36m0.5046[0m  0.0100
+     19        [36m0.4908[0m  0.0120
+     20        [36m0.4785[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9045[0m  0.0080
+      2        [36m0.8541[0m  0.0050
+      3        [36m0.8138[0m  0.0100
+      4        [36m0.7772[0m  0.0180
+      5        [36m0.7382[0m  0.0100
+      6        [36m0.7047[0m  0.0110
+      7        [36m0.6764[0m  0.0130
+      8        [36m0.6518[0m  0.0140
+      9        [36m0.6351[0m  0.0150
+     10        [36m0.6119[0m  0.0140
+     11        [36m0.5901[0m  0.0120
+     12        [36m0.5731[0m  0.0110
+     13        [36m0.5556[0m  0.0110
+     14        [36m0.5370[0m  0.0110
+     15        [36m0.5203[0m  0.0120
+     16        [36m0.5102[0m  0.0120
+     17        [36m0.4965[0m  0.0110
+     18        [36m0.4858[0m  0.0120
+     19        [36m0.4755[0m  0.0130
+     20        [36m0.4666[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8530[0m  0.0080
+      2        [36m0.8157[0m  0.0100
+      3        [36m0.7780[0m  0.0070
+      4        [36m0.7426[0m  0.0080
+      5        [36m0.7123[0m  0.0110
+      6        [36m0.6853[0m  0.0110
+      7        [36m0.6631[0m  0.0070
+      8        [36m0.6424[0m  0.0080
+      9        [36m0.6207[0m  0.0110
+     10        [36m0.5979[0m  0.0110
+     11        [36m0.5746[0m  0.0070
+     12        [36m0.5569[0m  0.0090
+     13        [36m0.5405[0m  0.0110
+     14        [36m0.5247[0m  0.0080
+     15        [36m0.5084[0m  0.0090
+     16        [36m0.4979[0m  0.0100
+     17        [36m0.4828[0m  0.0120
+     18        [36m0.4693[0m  0.0110
+     19        [36m0.4566[0m  0.0130
+     20        [36m0.4482[0m  0.0110
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8096[0m  0.0050
+      2        [36m0.7747[0m  0.0080
+      3        [36m0.7429[0m  0.0050
+      4        [36m0.7128[0m  0.0120
+      5        [36m0.6863[0m  0.0110
+      6        [36m0.6606[0m  0.0060
+      7        [36m0.6354[0m  0.0110
+      8        [36m0.6125[0m  0.0080
+      9        [36m0.5911[0m  0.0100
+     10        [36m0.5698[0m  0.0120
+     11        [36m0.5516[0m  0.0130
+     12        [36m0.5360[0m  0.0120
+     13        [36m0.5203[0m  0.0110
+     14        [36m0.5057[0m  0.0090
+     15        [36m0.4912[0m  0.0100
+     16        [36m0.4804[0m  0.0110
+     17        [36m0.4683[0m  0.0170
+     18        [36m0.4575[0m  0.0100
+     19        [36m0.4474[0m  0.0120
+     20        [36m0.4410[0m  0.0120
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7662[0m  0.0120
+      2        [36m0.7340[0m  0.0120
+      3        [36m0.7014[0m  0.0130
+      4        [36m0.6754[0m  0.0180
+      5        [36m0.6539[0m  0.0120
+      6        [36m0.6324[0m  0.0120
+      7        [36m0.6101[0m  0.0120
+      8        [36m0.5890[0m  0.0090
+      9        [36m0.5693[0m  0.0140
+     10        [36m0.5545[0m  0.0080
+     11        [36m0.5345[0m  0.0120
+     12        [36m0.5178[0m  0.0130
+     13        [36m0.5040[0m  0.0130
+     14        [36m0.4890[0m  0.0070
+     15        [36m0.4754[0m  0.0060
+     16        [36m0.4636[0m  0.0070
+     17        [36m0.4554[0m  0.0050
+     18        [36m0.4447[0m  0.0110
+     19        [36m0.4331[0m  0.0090
+     20        [36m0.4231[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7233[0m  0.0070
+      2        [36m0.6972[0m  0.0050
+      3        [36m0.6728[0m  0.0090
+      4        [36m0.6493[0m  0.0050
+      5        [36m0.6249[0m  0.0090
+      6        [36m0.6011[0m  0.0050
+      7        [36m0.5779[0m  0.0080
+      8        [36m0.5564[0m  0.0060
+      9        [36m0.5371[0m  0.0060
+     10        [36m0.5201[0m  0.0060
+     11        [36m0.5070[0m  0.0070
+     12        [36m0.4925[0m  0.0060
+     13        [36m0.4774[0m  0.0070
+     14        [36m0.4645[0m  0.0070
+     15        [36m0.4507[0m  0.0070
+     16        [36m0.4390[0m  0.0070
+     17        [36m0.4272[0m  0.0070
+     18        [36m0.4164[0m  0.0090
+     19        [36m0.4079[0m  0.0070
+     20        [36m0.4001[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6798[0m  0.0080
+      2        [36m0.6554[0m  0.0050
+      3        [36m0.6308[0m  0.0090
+      4        [36m0.6075[0m  0.0050
+      5        [36m0.5867[0m  0.0070
+      6        [36m0.5663[0m  0.0060
+      7        [36m0.5478[0m  0.0070
+      8        [36m0.5309[0m  0.0080
+      9        [36m0.5159[0m  0.0050
+     10        [36m0.5023[0m  0.0090
+     11        [36m0.4872[0m  0.0050
+     12        [36m0.4733[0m  0.0080
+     13        [36m0.4593[0m  0.0060
+     14        [36m0.4441[0m  0.0060
+     15        [36m0.4315[0m  0.0080
+     16        [36m0.4220[0m  0.0060
+     17        [36m0.4114[0m  0.0100
+     18        [36m0.4006[0m  0.0080
+     19        [36m0.3904[0m  0.0080
+     20        [36m0.3801[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6717[0m  0.0070
+      2        [36m0.6490[0m  0.0060
+      3        [36m0.6266[0m  0.0070
+      4        [36m0.6085[0m  0.0050
+      5        [36m0.5906[0m  0.0070
+      6        [36m0.5731[0m  0.0090
+      7        [36m0.5553[0m  0.0080
+      8        [36m0.5399[0m  0.0090
+      9        [36m0.5225[0m  0.0060
+     10        [36m0.5046[0m  0.0100
+     11        [36m0.4898[0m  0.0050
+     12        [36m0.4751[0m  0.0060
+     13        [36m0.4614[0m  0.0080
+     14        [36m0.4488[0m  0.0060
+     15        [36m0.4378[0m  0.0100
+     16        [36m0.4250[0m  0.0050
+     17        [36m0.4140[0m  0.0070
+     18        [36m0.4058[0m  0.0070
+     19        [36m0.3951[0m  0.0070
+     20        [36m0.3852[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6987[0m  0.0100
+      2        [36m0.6749[0m  0.0120
+      3        [36m0.6506[0m  0.0100
+      4        [36m0.6301[0m  0.0110
+      5        [36m0.6090[0m  0.0060
+      6        [36m0.5888[0m  0.0070
+      7        [36m0.5711[0m  0.0090
+      8        [36m0.5520[0m  0.0050
+      9        [36m0.5356[0m  0.0080
+     10        [36m0.5201[0m  0.0070
+     11        [36m0.5040[0m  0.0100
+     12        [36m0.4903[0m  0.0060
+     13        [36m0.4763[0m  0.0070
+     14        [36m0.4644[0m  0.0060
+     15        [36m0.4522[0m  0.0060
+     16        [36m0.4404[0m  0.0090
+     17        [36m0.4291[0m  0.0050
+     18        [36m0.4180[0m  0.0090
+     19        [36m0.4077[0m  0.0060
+     20        [36m0.3976[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7257[0m  0.0050
+      2        [36m0.7003[0m  0.0060
+      3        [36m0.6746[0m  0.0070
+      4        [36m0.6513[0m  0.0080
+      5        [36m0.6299[0m  0.0090
+      6        [36m0.6093[0m  0.0080
+      7        [36m0.5867[0m  0.0070
+      8        [36m0.5693[0m  0.0080
+      9        [36m0.5526[0m  0.0060
+     10        [36m0.5360[0m  0.0100
+     11        [36m0.5199[0m  0.0080
+     12        [36m0.5028[0m  0.0060
+     13        [36m0.4899[0m  0.0080
+     14        [36m0.4754[0m  0.0070
+     15        [36m0.4625[0m  0.0089
+     16        [36m0.4496[0m  0.0060
+     17        [36m0.4391[0m  0.0060
+     18        [36m0.4269[0m  0.0090
+     19        [36m0.4168[0m  0.0070
+     20        [36m0.4077[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7528[0m  0.0060
+      2        [36m0.7264[0m  0.0060
+      3        [36m0.6985[0m  0.0079
+      4        [36m0.6733[0m  0.0060
+      5        [36m0.6512[0m  0.0080
+      6        [36m0.6311[0m  0.0060
+      7        [36m0.6110[0m  0.0090
+      8        [36m0.5921[0m  0.0079
+      9        [36m0.5734[0m  0.0070
+     10        [36m0.5550[0m  0.0060
+     11        [36m0.5380[0m  0.0060
+     12        [36m0.5236[0m  0.0070
+     13        [36m0.5092[0m  0.0070
+     14        [36m0.4936[0m  0.0060
+     15        [36m0.4811[0m  0.0090
+     16        [36m0.4696[0m  0.0090
+     17        [36m0.4563[0m  0.0050
+     18        [36m0.4467[0m  0.0080
+     19        [36m0.4372[0m  0.0060
+     20        [36m0.4257[0m  0.0109
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7797[0m  0.0090
+      2        [36m0.7511[0m  0.0050
+      3        [36m0.7219[0m  0.0090
+      4        [36m0.6969[0m  0.0070
+      5        [36m0.6737[0m  0.0060
+      6        [36m0.6492[0m  0.0100
+      7        [36m0.6274[0m  0.0080
+      8        [36m0.6074[0m  0.0060
+      9        [36m0.5868[0m  0.0070
+     10        [36m0.5680[0m  0.0069
+     11        [36m0.5509[0m  0.0090
+     12        [36m0.5329[0m  0.0070
+     13        [36m0.5165[0m  0.0070
+     14        [36m0.5034[0m  0.0070
+     15        [36m0.4902[0m  0.0060
+     16        [36m0.4765[0m  0.0060
+     17        [36m0.4624[0m  0.0080
+     18        [36m0.4510[0m  0.0070
+     19        [36m0.4403[0m  0.0080
+     20        [36m0.4286[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.0431[0m  0.0180
+      2        [36m0.9807[0m  0.0140
+      3        [36m0.9321[0m  0.0150
+      4        [36m0.8869[0m  0.0110
+      5        [36m0.8467[0m  0.0140
+      6        [36m0.8074[0m  0.0070
+      7        [36m0.7767[0m  0.0130
+      8        [36m0.7463[0m  0.0100
+      9        [36m0.7211[0m  0.0060
+     10        [36m0.6983[0m  0.0080
+     11        [36m0.6713[0m  0.0070
+     12        [36m0.6520[0m  0.0070
+     13        [36m0.6310[0m  0.0070
+     14        [36m0.6108[0m  0.0070
+     15        [36m0.5960[0m  0.0050
+     16        [36m0.5835[0m  0.0080
+     17        [36m0.5720[0m  0.0060
+     18        [36m0.5610[0m  0.0070
+     19        [36m0.5521[0m  0.0060
+     20        [36m0.5396[0m  0.0080
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9868[0m  0.0060
+      2        [36m0.9320[0m  0.0080
+      3        [36m0.8838[0m  0.0080
+      4        [36m0.8445[0m  0.0050
+      5        [36m0.8101[0m  0.0090
+      6        [36m0.7746[0m  0.0060
+      7        [36m0.7410[0m  0.0100
+      8        [36m0.7148[0m  0.0050
+      9        [36m0.6884[0m  0.0090
+     10        [36m0.6689[0m  0.0070
+     11        [36m0.6463[0m  0.0080
+     12        [36m0.6251[0m  0.0080
+     13        [36m0.6068[0m  0.0080
+     14        [36m0.5893[0m  0.0060
+     15        [36m0.5775[0m  0.0070
+     16        [36m0.5609[0m  0.0060
+     17        [36m0.5487[0m  0.0080
+     18        [36m0.5373[0m  0.0070
+     19        [36m0.5247[0m  0.0070
+     20        [36m0.5159[0m  0.0070
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9435[0m  0.0040
+      2        [36m0.8942[0m  0.0050
+      3        [36m0.8539[0m  0.0100
+      4        [36m0.8150[0m  0.0050
+      5        [36m0.7768[0m  0.0070
+      6        [36m0.7432[0m  0.0090
+      7        [36m0.7112[0m  0.0070
+      8        [36m0.6862[0m  0.0120
+      9        [36m0.6652[0m  0.0080
+     10        [36m0.6433[0m  0.0050
+     11        [36m0.6229[0m  0.0100
+     12        [36m0.6008[0m  0.0050
+     13        [36m0.5864[0m  0.0080
+     14        [36m0.5733[0m  0.0060
+     15        [36m0.5619[0m  0.0080
+     16        [36m0.5452[0m  0.0090
+     17        [36m0.5311[0m  0.0050
+     18        [36m0.5185[0m  0.0070
+     19        [36m0.5066[0m  0.0090
+     20        [36m0.4963[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.9010[0m  0.0090
+      2        [36m0.8634[0m  0.0100
+      3        [36m0.8267[0m  0.0110
+      4        [36m0.7887[0m  0.0110
+      5        [36m0.7561[0m  0.0110
+      6        [36m0.7259[0m  0.0090
+      7        [36m0.6976[0m  0.0100
+      8        [36m0.6714[0m  0.0090
+      9        [36m0.6509[0m  0.0050
+     10        [36m0.6273[0m  0.0110
+     11        [36m0.6054[0m  0.0110
+     12        [36m0.5871[0m  0.0080
+     13        [36m0.5684[0m  0.0090
+     14        [36m0.5507[0m  0.0110
+     15        [36m0.5332[0m  0.0090
+     16        [36m0.5196[0m  0.0070
+     17        [36m0.5046[0m  0.0110
+     18        [36m0.4926[0m  0.0160
+     19        [36m0.4794[0m  0.0080
+     20        [36m0.4697[0m  0.0130
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8572[0m  0.0050
+      2        [36m0.8193[0m  0.0060
+      3        [36m0.7863[0m  0.0080
+      4        [36m0.7566[0m  0.0070
+      5        [36m0.7301[0m  0.0060
+      6        [36m0.7015[0m  0.0060
+      7        [36m0.6792[0m  0.0060
+      8        [36m0.6526[0m  0.0060
+      9        [36m0.6236[0m  0.0100
+     10        [36m0.6033[0m  0.0090
+     11        [36m0.5871[0m  0.0070
+     12        [36m0.5706[0m  0.0080
+     13        [36m0.5508[0m  0.0050
+     14        [36m0.5335[0m  0.0090
+     15        [36m0.5188[0m  0.0050
+     16        [36m0.5052[0m  0.0060
+     17        [36m0.4946[0m  0.0040
+     18        [36m0.4833[0m  0.0080
+     19        [36m0.4727[0m  0.0080
+     20        [36m0.4623[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.8146[0m  0.0070
+      2        [36m0.7834[0m  0.0070
+      3        [36m0.7484[0m  0.0050
+      4        [36m0.7169[0m  0.0070
+      5        [36m0.6854[0m  0.0050
+      6        [36m0.6618[0m  0.0060
+      7        [36m0.6350[0m  0.0050
+      8        [36m0.6164[0m  0.0070
+      9        [36m0.5967[0m  0.0060
+     10        [36m0.5756[0m  0.0060
+     11        [36m0.5572[0m  0.0060
+     12        [36m0.5400[0m  0.0070
+     13        [36m0.5248[0m  0.0060
+     14        [36m0.5062[0m  0.0060
+     15        [36m0.4917[0m  0.0080
+     16        [36m0.4770[0m  0.0070
+     17        [36m0.4674[0m  0.0060
+     18        [36m0.4558[0m  0.0080
+     19        [36m0.4450[0m  0.0070
+     20        [36m0.4350[0m  0.0090
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7705[0m  0.0060
+      2        [36m0.7375[0m  0.0060
+      3        [36m0.7088[0m  0.0080
+      4        [36m0.6827[0m  0.0050
+      5        [36m0.6592[0m  0.0080
+      6        [36m0.6343[0m  0.0050
+      7        [36m0.6124[0m  0.0090
+      8        [36m0.5883[0m  0.0050
+      9        [36m0.5687[0m  0.0070
+     10        [36m0.5514[0m  0.0060
+     11        [36m0.5314[0m  0.0080
+     12        [36m0.5156[0m  0.0070
+     13        [36m0.5003[0m  0.0070
+     14        [36m0.4881[0m  0.0110
+     15        [36m0.4760[0m  0.0070
+     16        [36m0.4611[0m  0.0080
+     17        [36m0.4488[0m  0.0070
+     18        [36m0.4377[0m  0.0080
+     19        [36m0.4285[0m  0.0100
+     20        [36m0.4176[0m  0.0060
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.7278[0m  0.0080
+      2        [36m0.7030[0m  0.0070
+      3        [36m0.6769[0m  0.0060
+      4        [36m0.6533[0m  0.0070
+      5        [36m0.6317[0m  0.0070
+      6        [36m0.6106[0m  0.0080
+      7        [36m0.5919[0m  0.0060
+      8        [36m0.5751[0m  0.0080
+      9        [36m0.5590[0m  0.0090
+     10        [36m0.5416[0m  0.0060
+     11        [36m0.5275[0m  0.0110
+     12        [36m0.5083[0m  0.0080
+     13        [36m0.4936[0m  0.0070
+     14        [36m0.4776[0m  0.0090
+     15        [36m0.4650[0m  0.0050
+     16        [36m0.4513[0m  0.0070
+     17        [36m0.4403[0m  0.0090
+     18        [36m0.4300[0m  0.0050
+     19        [36m0.4199[0m  0.0109
+     20        [36m0.4090[0m  0.0150
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.6843[0m  0.0130
+      2        [36m0.6625[0m  0.0110
+      3        [36m0.6406[0m  0.0080
+      4        [36m0.6206[0m  0.0080
+      5        [36m0.6013[0m  0.0060
+      6        [36m0.5789[0m  0.0070
+      7        [36m0.5605[0m  0.0060
+      8        [36m0.5435[0m  0.0060
+      9        [36m0.5265[0m  0.0080
+     10        [36m0.5117[0m  0.0080
+     11        [36m0.4968[0m  0.0060
+     12        [36m0.4820[0m  0.0060
+     13        [36m0.4691[0m  0.0080
+     14        [36m0.4543[0m  0.0050
+     15        [36m0.4396[0m  0.0080
+     16        [36m0.4276[0m  0.0070
+     17        [36m0.4148[0m  0.0110
+     18        [36m0.4032[0m  0.0080
+     19        [36m0.3928[0m  0.0060
+     20        [36m0.3834[0m  0.0100
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.2184[0m  0.0060
+      2        [36m1.1479[0m  0.0060
+      3        [36m1.0829[0m  0.0070
+      4        [36m1.0247[0m  0.0060
+      5        [36m0.9780[0m  0.0070
+      6        [36m0.9368[0m  0.0060
+      7        [36m0.8958[0m  0.0070
+      8        [36m0.8533[0m  0.0060
+      9        [36m0.8184[0m  0.0080
+     10        [36m0.7869[0m  0.0060
+     11        [36m0.7615[0m  0.0090
+     12        [36m0.7376[0m  0.0070
+     13        [36m0.7122[0m  0.0080
+     14        [36m0.6884[0m  0.0090
+     15        [36m0.6692[0m  0.0060
+     16        [36m0.6521[0m  0.0050
+     17        [36m0.6373[0m  0.0080
+     18        [36m0.6274[0m  0.0050
+     19        [36m0.6178[0m  0.0080
+     20        [36m0.6068[0m  0.0050
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Re-initializing optimizer.
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m1.1565[0m  0.0070
+      2        [36m1.0861[0m  0.0050
+      3        [36m1.0214[0m  0.0100
+      4        [36m0.9634[0m  0.0050
+      5        [36m0.9151[0m  0.0060
+      6        [36m0.8672[0m  0.0069
+      7        [36m0.8312[0m  0.0090
+      8        [36m0.7966[0m  0.0090
+      9        [36m0.7684[0m  0.0069
+     10        [36m0.7428[0m  0.0050
+     11        [36m0.7221[0m  0.0070
+     12        [36m0.6980[0m  0.0050
+     13        [36m0.6774[0m  0.0090
+     14        [36m0.6607[0m  0.0070
+     15        [36m0.6467[0m  0.0070
+     16        [36m0.6336[0m  0.0100
+     17        [36m0.6187[0m  0.0070
+     18        [36m0.6083[0m  0.0070
+     19        [36m0.5961[0m  0.0080
+     20        [36m0.5840[0m  0.0060
+sweep fit done.
+
+Going to iterate woo hoo! 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D17ACC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC1D988> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF32508> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CBD2F08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D07E308> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D02A9C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF80B08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF80088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF5F848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEC6C08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0B29C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D14CDC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF4A608> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE93308> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF0D4C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CFB1A48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE79388> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF6F9C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D167F88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF36208> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE23648> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF7BD08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D08D088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE7D948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEDB248> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CCEF848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF945C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC2D788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D167F88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE93308> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0C4848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D05DA88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEDB248> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEA41C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC21608> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0707C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE41348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0C46C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CECAD88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC364C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D08DFC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CDC8108> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC4F688> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D167E48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D01C908> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE93308> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D08D088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0FA788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CB33DC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0C9748> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CF0D748> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0B29C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC21CC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEC6C08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CC9F8C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEDD488> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D049188> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CFC12C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0C9108> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CFC12C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D150848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CD7D3C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CD6E208> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEFB7C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CEDB248> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D0FA8C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CE23A08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D190C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CD17388> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950D049988> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000001950CFAB388> 
+
+All results voila: 
+
+                                            predictor     error  disparity
+0   <class '__main__.SampleWeightNN'>[initialized]...  0.486111   0.555556
+1   <class '__main__.SampleWeightNN'>[initialized]...  0.472222   0.486111
+2   <class '__main__.SampleWeightNN'>[initialized]...  0.486111   0.500000
+3   <class '__main__.SampleWeightNN'>[initialized]...  0.500000   0.458333
+4   <class '__main__.SampleWeightNN'>[initialized]...  0.555556   0.375000
+..                                                ...       ...        ...
+66  <class '__main__.SampleWeightNN'>[initialized]...  0.583333   0.347222
+67  <class '__main__.SampleWeightNN'>[initialized]...  0.583333   0.291667
+68  <class '__main__.SampleWeightNN'>[initialized]...  0.597222   0.277778
+69  <class '__main__.SampleWeightNN'>[initialized]...  0.500000   0.430556
+70  <class '__main__.SampleWeightNN'>[initialized]...  0.541667   0.388889
+
+[71 rows x 3 columns]
+#################################################
+[<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+), <class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)]
+Traceback (most recent call last):
+  File "pytorchModel.py", line 240, in <module>
+    errors
+TypeError: unsupported format string passed to list.__format__

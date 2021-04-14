@@ -1,0 +1,640 @@
+,predictor,error,disparity
+0,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+1,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+2,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+3,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+4,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+5,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+6,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+7,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+8,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+9,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+10,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+11,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+12,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+13,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+14,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+15,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+16,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+17,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+18,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+19,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+20,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+21,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+22,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+23,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+24,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+25,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+26,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+27,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+28,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+29,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+30,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+31,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+32,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+33,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+34,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+35,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+36,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+37,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+38,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+39,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+40,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+41,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+42,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+43,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+44,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+45,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+46,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+47,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+48,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+49,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+50,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+51,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+52,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+53,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+54,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+55,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+56,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+57,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+58,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+59,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+60,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+61,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+62,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+63,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+64,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+65,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+66,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+67,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+68,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+69,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0
+70,"<class '__main__.SampleWeightNN'>[initialized](
+  module_=MLP(
+    (hidden1): Linear(in_features=239, out_features=12, bias=True)
+    (act1): Sigmoid()
+    (hidden2): Linear(in_features=12, out_features=8, bias=True)
+    (act2): Sigmoid()
+    (hidden3): Linear(in_features=8, out_features=1, bias=True)
+  ),
+)",0.7638888888888888,0.0

@@ -1,0 +1,38 @@
+(1843, 13)
+(1843, 2123)
+Type of X: <class 'pandas.core.frame.DataFrame'> 
+
+Y type: 
+<class 'method'>
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\cuda\__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  ..\c10\cuda\CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Training unmitigated
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.3633[0m  0.4612
+      2        [36m0.2947[0m  0.2020
+      3        [36m0.2552[0m  0.2022
+      4        [36m0.2329[0m  0.2193
+      5        [36m0.2198[0m  0.2730
+      6        [36m0.2113[0m  0.2018
+      7        [36m0.2062[0m  0.1909
+      8        [36m0.2035[0m  0.1975
+      9        [36m0.2017[0m  0.2226
+     10        [36m0.2004[0m  0.2276
+     11        [36m0.1993[0m  0.1785
+     12        [36m0.1985[0m  0.2004
+     13        [36m0.1978[0m  0.1846
+     14        [36m0.1973[0m  0.2161
+     15        [36m0.1968[0m  0.2187
+     16        [36m0.1963[0m  0.2022
+     17        [36m0.1959[0m  0.2438
+     18        [36m0.1954[0m  0.1931
+     19        [36m0.1949[0m  0.2325
+     20        [36m0.1944[0m  0.1691
+Accuracy score um: 0.7506775067750677
+Traceback (most recent call last):
+  File "pytorchModel.py", line 211, in <module>
+    optimizer = SGD(net.parameters(), lr= 0.001)
+AttributeError: 'SampleWeightNN' object has no attribute 'parameters'

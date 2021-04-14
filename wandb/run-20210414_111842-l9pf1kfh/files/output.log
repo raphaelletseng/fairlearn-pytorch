@@ -1,0 +1,49 @@
+(927, 13)
+(927, 1192)
+Type of X: <class 'pandas.core.frame.DataFrame'> 
+
+Y type: 
+<class 'method'>
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\cuda\__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  ..\c10\cuda\CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Training unmitigated
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+Traceback (most recent call last):
+  File "pytorchModel.py", line 202, in <module>
+    unmitigated_predictor.fit(X_train, Y_train)
+  File "pytorchModel.py", line 173, in fit
+    return super().fit(X, y)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\classifier.py", line 142, in fit
+    return super(NeuralNetClassifier, self).fit(X, y, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 903, in fit
+    self.partial_fit(X, y, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 862, in partial_fit
+    self.fit_loop(X, y, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 776, in fit_loop
+    step_fn=self.train_step, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 812, in run_single_epoch
+    step = step_fn(Xi, yi, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 709, in train_step
+    self.optimizer_.step(step_fn)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\autograd\grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\optim\sgd.py", line 86, in step
+    loss = closure()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 705, in step_fn
+    step = self.train_step_single(Xi, yi, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 645, in train_step_single
+    y_pred = self.infer(Xi, **fit_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\skorch\net.py", line 1047, in infer
+    return self.module_(**x_dict)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "pytorchModel.py", line 149, in forward
+    X = self.hidden1(X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\modules\linear.py", line 93, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\functional.py", line 1690, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (32x1192 and 239x12)

@@ -1,0 +1,32 @@
+2021-04-14 10:52:57,772 INFO    MainThread:24552 [internal.py:wandb_internal():91] W&B internal server running at pid: 24552, started at: 2021-04-14 10:52:57.760152
+2021-04-14 10:52:57,774 INFO    WriterThread:24552 [datastore.py:open_for_write():77] open: C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210414_105255-tiqpkj5q\run-tiqpkj5q.wandb
+2021-04-14 10:52:57,775 DEBUG   HandlerThread:24552 [handler.py:handle_request():101] handle_request: check_version
+2021-04-14 10:52:57,778 DEBUG   SenderThread:24552 [sender.py:send():161] send: header
+2021-04-14 10:52:57,778 DEBUG   SenderThread:24552 [sender.py:send():161] send: request
+2021-04-14 10:52:57,779 DEBUG   SenderThread:24552 [sender.py:send_request():170] send_request: check_version
+2021-04-14 10:52:57,965 DEBUG   SenderThread:24552 [sender.py:send():161] send: run
+2021-04-14 10:52:58,393 INFO    SenderThread:24552 [sender.py:_start_run_threads():638] run started: tiqpkj5q with start time 1618411975
+2021-04-14 10:52:58,393 DEBUG   SenderThread:24552 [sender.py:send():161] send: summary
+2021-04-14 10:52:58,394 DEBUG   HandlerThread:24552 [handler.py:handle_request():101] handle_request: run_start
+2021-04-14 10:52:58,410 INFO    SenderThread:24552 [sender.py:_save_file():769] saving file wandb-summary.json with policy end
+2021-04-14 10:53:06,191 DEBUG   HandlerThread:24552 [meta.py:__init__():34] meta init
+2021-04-14 10:53:06,202 DEBUG   HandlerThread:24552 [meta.py:__init__():48] meta init done
+2021-04-14 10:53:06,202 DEBUG   HandlerThread:24552 [meta.py:probe():190] probe
+2021-04-14 10:53:06,205 DEBUG   HandlerThread:24552 [meta.py:_setup_git():180] setup git
+2021-04-14 10:53:06,429 DEBUG   HandlerThread:24552 [meta.py:_setup_git():187] setup git done
+2021-04-14 10:53:06,430 DEBUG   HandlerThread:24552 [meta.py:_save_pip():52] save pip
+2021-04-14 10:53:06,431 DEBUG   HandlerThread:24552 [meta.py:_save_pip():66] save pip done
+2021-04-14 10:53:06,432 DEBUG   HandlerThread:24552 [meta.py:probe():231] probe done
+2021-04-14 10:53:06,444 DEBUG   HandlerThread:24552 [handler.py:handle_request():101] handle_request: status
+2021-04-14 10:53:06,445 DEBUG   SenderThread:24552 [sender.py:send():161] send: request
+2021-04-14 10:53:06,445 DEBUG   SenderThread:24552 [sender.py:send_request():170] send_request: status
+2021-04-14 10:53:06,589 DEBUG   SenderThread:24552 [sender.py:send():161] send: files
+2021-04-14 10:53:06,591 INFO    SenderThread:24552 [sender.py:_save_file():769] saving file wandb-metadata.json with policy now
+2021-04-14 10:53:21,616 DEBUG   HandlerThread:24552 [handler.py:handle_request():101] handle_request: status
+2021-04-14 10:53:21,617 DEBUG   SenderThread:24552 [sender.py:send():161] send: request
+2021-04-14 10:53:21,617 DEBUG   SenderThread:24552 [sender.py:send_request():170] send_request: status
+2021-04-14 10:53:28,492 DEBUG   HandlerThread:24552 [handler.py:handle_request():101] handle_request: shutdown
+2021-04-14 10:53:28,493 INFO    HandlerThread:24552 [handler.py:finish():535] shutting down handler
+2021-04-14 10:53:29,497 INFO    WriterThread:24552 [datastore.py:close():258] close: C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210414_105255-tiqpkj5q\run-tiqpkj5q.wandb
+2021-04-14 10:53:29,498 INFO    SenderThread:24552 [sender.py:finish():872] shutting down sender
+2021-04-14 10:53:30,866 INFO    MainThread:24552 [internal.py:handle_exit():78] Internal process exited

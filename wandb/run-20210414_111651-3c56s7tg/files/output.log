@@ -1,0 +1,203 @@
+Y has been tranformed. Assigning sets.
+
+About to start bias mitigation training.
+
+Commencing GridSearch.
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 61, in __init__
+    logger.warning(GRID_DIMENSION_WARN_TEMPLATE, true_dim, GRID_DIMENSION_WARN_THRESHOLD)
+Message: 'The grid has {} dimensions. It is not recommended to use more than {}, otherwise a prohibitively large grid size is required to explore the space thoroughly. For such cases consider using ExponentiatedGradient from the fairlearn.reductions module.'
+Arguments: (15, 4)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 65, in __init__
+    logger.warning(GRID_SIZE_WARN_TEMPLATE, grid_size, recommended_min_grid_size)
+Message: 'Generating a grid with {} grid points. It is recommended to use at least {} grid points. Please consider increasing grid_size.'
+Arguments: (71, 32768)
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E354C88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0EEDC808> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA659C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11516CC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E1187C188> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0B081C88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0BF547C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E986DC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E354C88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DAC2648> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E1187BE48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E986DC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E1187B6C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DAC2648> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11AD13C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7C848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0CE0FB88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7CE88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA65508> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11AD1788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11502748> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0CF457C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5388> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA65D88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E43C8C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0CF457C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0EEDC208> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DAC2C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11502F88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5E88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA65908> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11AD1788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0EEDC208> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E986DC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E3FE7C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E538888> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA98E08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7C948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E5FC508> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E264948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E264AC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7CEC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E33DDC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA98608> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0EF16288> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E264188> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0B081C88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E3FEB88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E2D5388> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11516048> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E1187B6C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11502BC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E43C088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0B081C88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA65D88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E11502F88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E33D6C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0EEDC988> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E37B788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7C948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0CE0FB88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E43C3C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0DA7CE88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E37B448> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E57A188> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E638B88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E264608> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x0000021E0E384C08> 
+
+                                 predictor     error  disparity  accuracy
+0   LogisticRegression(solver='liblinear')  0.403859   0.564529  0.592998
+1   LogisticRegression(solver='liblinear')  0.278939   0.241497  0.717474
+2   LogisticRegression(solver='liblinear')  0.213191   0.763545  0.786979
+3   LogisticRegression(solver='liblinear')  0.197221   0.810988  0.807452
+4   LogisticRegression(solver='liblinear')  0.282676   0.156242  0.718395
+..                                     ...       ...        ...       ...
+66  LogisticRegression(solver='liblinear')  0.281780   0.683711  0.719930
+67  LogisticRegression(solver='liblinear')  0.243416   0.752975  0.759238
+68  LogisticRegression(solver='liblinear')  0.242469   0.755765  0.758829
+69  LogisticRegression(solver='liblinear')  0.280117   0.746448  0.721261
+70  LogisticRegression(solver='liblinear')  0.288153   0.750614  0.713584
+
+[71 rows x 4 columns]
+#################################################

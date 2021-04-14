@@ -1,0 +1,54 @@
+2021-04-13 13:20:14,113 INFO    MainThread:19236 [wandb_setup.py:_flush():69] setting env: {}
+2021-04-13 13:20:14,113 INFO    MainThread:19236 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-04-13 13:20:14,113 INFO    MainThread:19236 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-04-13 13:20:14,114 INFO    MainThread:19236 [wandb_init.py:_log_setup():334] Logging user logs to C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210413_132014-1omane4d\logs\debug.log
+2021-04-13 13:20:14,114 INFO    MainThread:19236 [wandb_init.py:_log_setup():335] Logging internal logs to C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210413_132014-1omane4d\logs\debug-internal.log
+2021-04-13 13:20:14,114 INFO    MainThread:19236 [wandb_init.py:init():367] calling init triggers
+2021-04-13 13:20:14,115 INFO    MainThread:19236 [wandb_init.py:init():374] wandb.init called with sweep_config: {}
+config: {'run_name': 'run1-noDP-sex-errors', 'architecture': 'MLP', 'dataset': 'adult', 'batch_size': 32, 'n_epoch': 20, 'learning_rate': 0.001}
+2021-04-13 13:20:14,116 INFO    MainThread:19236 [wandb_init.py:init():416] starting backend
+2021-04-13 13:20:14,116 INFO    MainThread:19236 [backend.py:_multiprocessing_setup():71] multiprocessing start_methods=spawn, using: spawn
+2021-04-13 13:20:14,126 INFO    MainThread:19236 [backend.py:ensure_launched():123] starting backend process...
+2021-04-13 13:20:14,379 INFO    MainThread:19236 [backend.py:ensure_launched():128] started backend process with pid: 1988
+2021-04-13 13:20:14,380 INFO    MainThread:19236 [wandb_init.py:init():421] backend started and connected
+2021-04-13 13:20:14,381 INFO    MainThread:19236 [wandb_init.py:init():461] updated telemetry
+2021-04-13 13:20:14,383 INFO    MainThread:19236 [wandb_init.py:init():480] communicating current version
+2021-04-13 13:20:17,143 INFO    MainThread:19236 [wandb_init.py:init():485] got version response upgrade_message: "wandb version 0.10.25 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-04-13 13:20:17,145 INFO    MainThread:19236 [wandb_init.py:init():493] communicating run to backend with 30 second timeout
+2021-04-13 13:20:17,577 INFO    MainThread:19236 [wandb_init.py:init():518] starting run threads in backend
+2021-04-13 13:20:22,597 INFO    MainThread:19236 [wandb_run.py:_console_start():1480] atexit reg
+2021-04-13 13:20:22,599 INFO    MainThread:19236 [wandb_run.py:_redirect():1343] redirect: SettingsConsole.WRAP
+2021-04-13 13:20:22,599 INFO    MainThread:19236 [wandb_run.py:_redirect():1378] Wrapping output streams.
+2021-04-13 13:20:22,599 INFO    MainThread:19236 [wandb_run.py:_redirect():1394] Redirects installed.
+2021-04-13 13:20:22,599 INFO    MainThread:19236 [wandb_init.py:init():542] run started, returning control to user process
+2021-04-13 13:21:07,954 INFO    MainThread:19236 [wandb_run.py:_atexit_cleanup():1450] got exitcode: 1
+2021-04-13 13:21:07,955 INFO    MainThread:19236 [wandb_run.py:_restore():1422] restore
+2021-04-13 13:21:08,185 INFO    MainThread:19236 [wandb_run.py:_wait_for_finish():1572] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 767
+  total_bytes: 767
+}
+
+2021-04-13 13:21:10,193 INFO    MainThread:19236 [wandb_run.py:_wait_for_finish():1572] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 113814
+  total_bytes: 113814
+}
+
+2021-04-13 13:21:12,202 INFO    MainThread:19236 [wandb_run.py:_wait_for_finish():1572] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 113814
+  total_bytes: 113814
+}
+
+2021-04-13 13:21:14,017 INFO    MainThread:19236 [wandb_run.py:_show_files():1794] logging synced files

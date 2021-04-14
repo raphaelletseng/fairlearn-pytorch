@@ -1,0 +1,38 @@
+(1843, 13)
+(1843, 2123)
+Type of X: <class 'pandas.core.frame.DataFrame'> 
+
+Y type: 
+<class 'method'>
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\cuda\__init__.py:52: UserWarning: CUDA initialization: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx (Triggered internally at  ..\c10\cuda\CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Training unmitigated
+C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\torch\nn\_reduction.py:44: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+  epoch    train_loss     dur
+-------  ------------  ------
+      1        [36m0.1978[0m  0.3317
+      2        [36m0.1965[0m  0.2382
+      3        [36m0.1955[0m  0.2527
+      4        [36m0.1947[0m  0.2545
+      5        [36m0.1939[0m  0.2543
+      6        [36m0.1933[0m  0.2316
+      7        [36m0.1927[0m  0.2218
+      8        [36m0.1921[0m  0.2015
+      9        [36m0.1916[0m  0.2222
+     10        [36m0.1911[0m  0.2015
+     11        [36m0.1906[0m  0.2016
+     12        [36m0.1901[0m  0.1715
+     13        [36m0.1896[0m  0.1918
+     14        [36m0.1891[0m  0.2426
+     15        [36m0.1886[0m  0.2528
+     16        [36m0.1880[0m  0.2314
+     17        [36m0.1875[0m  0.2280
+     18        [36m0.1871[0m  0.2334
+     19        [36m0.1866[0m  0.1925
+     20        [36m0.1861[0m  0.2094
+Accuracy score um: 0.7452574525745257
+Traceback (most recent call last):
+  File "pytorchModel.py", line 215, in <module>
+    privacy_engine = PrivacyEngine(
+NameError: name 'PrivacyEngine' is not defined

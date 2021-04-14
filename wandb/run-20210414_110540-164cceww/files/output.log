@@ -1,0 +1,163 @@
+Y has been tranformed. Assigning sets.
+
+About to start bias mitigation training.
+
+Commencing GridSearch.
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EBC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FCD5AC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0C6FC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010743AC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD21088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00EC71348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FCFF488> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD81948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EFC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0C6FC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0B0C08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00E2154C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0C6EC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EBC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C160C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0105E9948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0105E9348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD8CD88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00EC71348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD21908> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010848E08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD04348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B01091A788> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00EEA1848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B011214848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870508> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00D8DB208> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00EB1D248> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B013B3B888> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0B09C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B013B3B648> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD04348> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870F48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EF08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C160C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0B0A48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0105E9D88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870A08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C160C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EFC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0B0A48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD81948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0137D9708> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0137D9088> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C3BA08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010848548> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00E215548> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010D2B388> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FC7B688> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010C4EF08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00EEA1848> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B01091A3C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0106FF4C8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00F0C6EC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B011214E48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00E215448> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD76488> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870888> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0105E9C48> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD76488> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870B08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD21948> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010870488> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD8CF08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0137E1FC8> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B011250A08> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B010D76748> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B01076CD88> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00FD76708> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B00E215548> 
+
+<fairlearn.reductions._moments.error_rate.ErrorRate object at 0x000002B0105E9B88> 
+
+                                 predictor     error  disparity  accuracy
+0   LogisticRegression(solver='liblinear')  0.529496   0.458619  0.470468
+1   LogisticRegression(solver='liblinear')  0.525657   0.455768  0.474153
+2   LogisticRegression(solver='liblinear')  0.521357   0.453586  0.478452
+3   LogisticRegression(solver='liblinear')  0.517263   0.451892  0.481933
+4   LogisticRegression(solver='liblinear')  0.512733   0.449115  0.486027
+..                                     ...       ...        ...       ...
+66  LogisticRegression(solver='liblinear')  0.354439   0.464455  0.636810
+67  LogisticRegression(solver='liblinear')  0.356410   0.465320  0.635684
+68  LogisticRegression(solver='liblinear')  0.357869   0.466213  0.634354
+69  LogisticRegression(solver='liblinear')  0.359302   0.466976  0.633228
+70  LogisticRegression(solver='liblinear')  0.360709   0.467895  0.632204
+
+[71 rows x 4 columns]
+#################################################

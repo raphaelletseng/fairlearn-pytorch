@@ -1,0 +1,26 @@
+(45223, 13)
+(45223, 27254)
+Traceback (most recent call last):
+  File "pytorchModel.py", line 114, in <module>
+    dataset = CSVDataset()
+  File "pytorchModel.py", line 66, in __init__
+    X_scaled = sc.fit_transform(X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 690, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\preprocessing\_data.py", line 667, in fit
+    return self.partial_fit(X, y)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\preprocessing\_data.py", line 698, in partial_fit
+    force_all_finite='allow-nan')
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 420, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 598, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\_asarray.py", line 85, in asarray
+    return array(a, dtype, copy=False, order=order)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\generic.py", line 1778, in __array__
+    return np.asarray(self._values, dtype=dtype)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\_asarray.py", line 85, in asarray
+    return array(a, dtype, copy=False, order=order)
+MemoryError: Unable to allocate 9.18 GiB for an array with shape (45223, 27254) and data type float64
