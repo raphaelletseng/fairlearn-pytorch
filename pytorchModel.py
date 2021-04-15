@@ -15,12 +15,11 @@ from torch import Tensor
 from torch.nn import Linear
 from torch.nn import Sigmoid
 from torch.nn import Module
-from torch.optim import SGD
+from torch.optim.sgd import SGD, required
 from torch.nn import MSELoss
 from torch.nn import BCELoss
 from torch.nn.init import xavier_uniform_
 
-from fairlearn.reductions import GridSearch
 from fairlearn.reductions import DemographicParity, ErrorRate
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
@@ -32,11 +31,26 @@ import sklearn.metrics as skm
 from fairlearn.metrics import true_positive_rate
 from fairlearn.metrics import MetricFrame
 from sklearn.metrics import confusion_matrix
+
+from typing import Optional
+
+from grid_search import ModifiedGridSearch
+
 import wandb
 wandb.login()
 run_name = "run4-sex-dp"
 noise = 1.0
 enable_dp = True
+use_grid_search = True
+
+
+class PrivacySGD(SGD):
+    def __init__(self, params, privacy_engine: Optional[PrivacyEngine] = None, lr=required, momentum=0, dampening=0,
+                 weight_decay=0, nesterov=False) -> None:
+        super().__init__(params, lr, momentum, dampening, weight_decay, nesterov)
+        if privacy_engine is not None:
+            privacy_engine.attach(self)
+
 
 class CSVDataset(Dataset):
     def __init__(self):
@@ -161,9 +175,6 @@ class MLP(Module):
 
 # Add comments lovely.
 class SampleWeightNN(NeuralNetClassifier):
-    def __init__(self, *args, criterion__reduce = False, **kwargs):
-        super().__init__(*args, criterion__reduce=criterion__reduce, **kwargs)
-
     def fit(self, X, y, sample_weight = None):
         if isinstance(X, (pd.DataFrame, pd.Series)):
             X = X.to_numpy().astype('float32')
@@ -175,6 +186,17 @@ class SampleWeightNN(NeuralNetClassifier):
         sample_weight = sample_weight if sample_weight is not None else np.ones_like(y)
         X = {'X': X, 'sample_weight': sample_weight}
         return super().fit(X, y)
+
+    def train_step(self, Xi, yi, **fit_params):
+
+        step_accumulator = self.get_train_step_accumulator()
+
+        self.optimizer_.zero_grad()
+        step = self.train_step_single(Xi, yi, **fit_params)
+        step_accumulator.store_step(step)
+
+        self.optimizer_.step()
+        return step_accumulator.get_step()
 
     def predict(self, X):
         if isinstance(X, (pd.DataFrame, pd.Series)):
@@ -189,51 +211,57 @@ class SampleWeightNN(NeuralNetClassifier):
         return loss_reduced
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-net = SampleWeightNN(
-    MLP(2123),
-    max_epochs = 20,
-    optimizer = SGD,
-    lr = 0.001,
-    batch_size = 32,
-    train_split = None,
-    iterator_train__shuffle = True,
-    criterion = MSELoss,
-    device = device
-)
+
+def make_estimator():
+    # setting the seed ensures the parameters
+    # have the same weight every time we initialize
+    # the model
+    torch.manual_seed(42)
+    model = MLP(2123)
+    train_size = len(X_train)
+    if (enable_dp & (noise > 0)):
+        privacy_engine = PrivacyEngine(
+                model,
+                batch_size=32,
+                sample_size = train_size,
+                alphas = [1 + x / 10.0 for x in range(1, 100)] + list(range(12, 64)),
+                noise_multiplier = noise,
+                max_grad_norm = 1.0,
+                secure_rng = False,
+            )
+    else:
+        privacy_engine = None
+
+    estimator = SampleWeightNN(
+        model,
+        max_epochs = 20,
+        optimizer = PrivacySGD,
+        optimizer__privacy_engine=privacy_engine,
+        lr = 0.001,
+        batch_size = 32,
+        train_split = None,
+        iterator_train__shuffle = True,
+        criterion = MSELoss,
+        device = device
+    )
+    return estimator
+
+estimator = make_estimator()
 
 print("Training unmitigated")
-unmitigated_predictor = net
-unmitigated_predictor.fit(X_train, Y_train)
-unmitigated_prediction = unmitigated_predictor.predict(X_test)
+estimator.fit(X_train, Y_train)
+unmitigated_prediction = estimator.predict(X_test)
 acc_score_um = skm.accuracy_score(Y_test, unmitigated_prediction)
 print(f"Accuracy score um: {acc_score_um}")
 
-optimizer = SGD(net.parameters(), lr= 0.001)
-
-train_size = len(X_train)
-#-------------------------------DP--------------------------------#
-if(enable_dp):
-    if noise > 0:
-        privacy_engine = PrivacyEngine(
-            net,
-            batch_size=32,
-            sample_size = train_size,
-            alphas = [1 + x / 10.0 for x in range(1, 100)] + list(range(12, 64)),
-            noise_multiplier = noise,
-            max_grad_norm = 1.0,
-            secure_rng = False,
-        )
-        privacy_engine.attach(optimizer)
-
-
 #--------------------------------- Grid Search -------------------- #
 
-estimator = net
 disparity_moment = DemographicParity()
 print("Here we go.\n")
-sweep = GridSearch(estimator, disparity_moment, grid_size = 71)
+# its okay to use the "trained" estimator, since all estimators actually used in the grid search
+# will be recreated using the make_estimator function, so they will start from random weights.
+sweep = ModifiedGridSearch(estimator, disparity_moment, make_estimator_func=make_estimator, grid_size = 71)
 sweep.fit(X_train, Y_train, sensitive_features = A_train)
-print("sweep fit done.\n")
 predictors = sweep.predictors_
 
 print("Going to iterate. \n")
