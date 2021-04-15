@@ -1,0 +1,27 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.22
+    framework: sklearn
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.4
+    t:
+      1:
+      - 5
+      4: 3.7.4
+      5: 0.10.22
+      8:
+      - 3
+      - 5
+architecture:
+  desc: null
+  value: Sklearn LogisticRegression
+dataset:
+  desc: null
+  value: adult
+run_name:
+  desc: null
+  value: fairlearn-age-nodp-run1

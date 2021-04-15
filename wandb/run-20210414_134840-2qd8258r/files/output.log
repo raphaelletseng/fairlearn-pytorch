@@ -1,0 +1,70 @@
+Y has been tranformed. Assigning sets.
+
+About to start bias mitigation training.
+
+Commencing GridSearch.
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 61, in __init__
+    logger.warning(GRID_DIMENSION_WARN_TEMPLATE, true_dim, GRID_DIMENSION_WARN_THRESHOLD)
+Message: 'The grid has {} dimensions. It is not recommended to use more than {}, otherwise a prohibitively large grid size is required to explore the space thoroughly. For such cases consider using ExponentiatedGradient from the fairlearn.reductions module.'
+Arguments: (15, 4)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 65, in __init__
+    logger.warning(GRID_SIZE_WARN_TEMPLATE, grid_size, recommended_min_grid_size)
+Message: 'Generating a grid with {} grid points. It is recommended to use at least {} grid points. Please consider increasing grid_size.'
+Arguments: (5000, 32768)
+Traceback (most recent call last):
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 158, in fit
+    weights = self.constraints.signed_weights(lambda_vec)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_moments\utility_parity.py", line 237, in signed_weights
+    lambda row: 0 if pd.isna(row[_EVENT]) else adjust[row[_EVENT], row[_GROUP_ID]], axis=1
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 7547, in apply
+    return op.get_result()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\apply.py", line 180, in get_result
+    return self.apply_standard()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\apply.py", line 255, in apply_standard
+    results, res_index = self.apply_series_generator()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\apply.py", line 284, in apply_series_generator
+    results[i] = self.f(v)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_moments\utility_parity.py", line 237, in <lambda>
+    lambda row: 0 if pd.isna(row[_EVENT]) else adjust[row[_EVENT], row[_GROUP_ID]], axis=1
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\series.py", line 891, in __getitem__
+    result = self._get_value(key)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\series.py", line 991, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexes\multi.py", line 2711, in get_loc
+    return self._engine.get_loc(key)
+KeyboardInterrupt

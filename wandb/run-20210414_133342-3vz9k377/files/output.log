@@ -1,0 +1,84 @@
+Y has been tranformed. Assigning sets.
+
+About to start bias mitigation training.
+
+Commencing GridSearch.
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 61, in __init__
+    logger.warning(GRID_DIMENSION_WARN_TEMPLATE, true_dim, GRID_DIMENSION_WARN_THRESHOLD)
+Message: 'The grid has {} dimensions. It is not recommended to use more than {}, otherwise a prohibitively large grid size is required to explore the space thoroughly. For such cases consider using ExponentiatedGradient from the fairlearn.reductions module.'
+Arguments: (73, 4)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 65, in __init__
+    logger.warning(GRID_SIZE_WARN_TEMPLATE, grid_size, recommended_min_grid_size)
+Message: 'Generating a grid with {} grid points. It is recommended to use at least {} grid points. Please consider increasing grid_size.'
+Arguments: (71, 9444732965739290427392)
+Traceback (most recent call last):
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 186, in fit
+    self.objectives_.append(objective.gamma(predict_fct)[0])
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_moments\error_rate.py", line 30, in gamma
+    pred = predictor(self.X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 183, in predict_fct
+    def predict_fct(X): return current_estimator.predict(X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py", line 307, in predict
+    scores = self.decision_function(X)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_base.py", line 282, in decision_function
+    X = check_array(X, accept_sparse='csr')
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 72, in inner_f
+    return f(**kwargs)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 506, in check_array
+    if (not hasattr(array, 'sparse') and
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\generic.py", line 5132, in __getattr__
+    return object.__getattribute__(self, name)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\accessor.py", line 187, in __get__
+    accessor_obj = self._accessor(obj)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\arrays\sparse\accessor.py", line 19, in __init__
+    self._validate(data)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\arrays\sparse\accessor.py", line 221, in _validate
+    dtypes = data.dtypes
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\generic.py", line 5376, in dtypes
+    return self._constructor_sliced(data, index=self._info_axis, dtype=np.object_)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\series.py", line 327, in __init__
+    data = sanitize_array(data, index, dtype, copy, raise_cast_failure=True)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\construction.py", line 428, in sanitize_array
+    subarr = _try_cast(data, dtype, copy, raise_cast_failure)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\construction.py", line 558, in _try_cast
+    subarr = maybe_cast_to_datetime(arr, dtype)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\dtypes\cast.py", line 1315, in maybe_cast_to_datetime
+    is_datetime64 = is_datetime64_dtype(dtype)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\dtypes\common.py", line 377, in is_datetime64_dtype
+    return arr_or_dtype.kind == "M"
+KeyboardInterrupt

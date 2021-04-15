@@ -1,0 +1,56 @@
+Y has been tranformed. Assigning sets.
+
+About to start bias mitigation training.
+
+Commencing GridSearch.
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 61, in __init__
+    logger.warning(GRID_DIMENSION_WARN_TEMPLATE, true_dim, GRID_DIMENSION_WARN_THRESHOLD)
+Message: 'The grid has {} dimensions. It is not recommended to use more than {}, otherwise a prohibitively large grid size is required to explore the space thoroughly. For such cases consider using ExponentiatedGradient from the fairlearn.reductions module.'
+Arguments: (15, 4)
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 869, in format
+    return fmt.format(record)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 148, in fit
+    self.grid_offset).grid
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\_grid_generator.py", line 65, in __init__
+    logger.warning(GRID_SIZE_WARN_TEMPLATE, grid_size, recommended_min_grid_size)
+Message: 'Generating a grid with {} grid points. It is recommended to use at least {} grid points. Please consider increasing grid_size.'
+Arguments: (500, 32768)
+Traceback (most recent call last):
+  File "fairness.py", line 72, in <module>
+    sweep.fit(X_train, Y_train, sensitive_features = A_train)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\fairlearn\reductions\_grid_search\grid_search.py", line 179, in fit
+    current_estimator.fit(X, y_reduction, **{self.sample_weight_name: weights})
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\linear_model\_logistic.py", line 1360, in fit
+    sample_weight=sample_weight)
+  File "C:\Users\rapha\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\svm\_base.py", line 969, in _fit_liblinear
+    epsilon, sample_weight)
+KeyboardInterrupt

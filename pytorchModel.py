@@ -32,12 +32,13 @@ import sklearn.metrics as skm
 from fairlearn.metrics import true_positive_rate
 from fairlearn.metrics import MetricFrame
 from sklearn.metrics import confusion_matrix
-import wandb
-wandb.login()
-run_name = "run4-sex-dp"
+#import wandb
+#wandb.login()
+run_name = "run4-sex-dp-woSkorch"
 noise = 1.0
-enable_dp = True
+enable_dp = False
 
+####--------- Dataset -------------------------###
 class CSVDataset(Dataset):
     def __init__(self):
         path = 'adult.csv'
@@ -48,7 +49,7 @@ class CSVDataset(Dataset):
                     'relationship', 'race', 'sex', 'capital-gain',
                     'capital-loss', 'hours-per-week', 'native-country', 'y']
 
-        df = read_csv(path, names = cols, nrows = 2000)
+        df = read_csv(path, names = cols, nrows = 100)
         df = df.replace({'?': np.nan})
         df['y'] = df['y'].apply(lambda x:0 if ">50K" in x else 1)
         df = df.dropna()
@@ -103,21 +104,24 @@ class CSVDataset(Dataset):
         train_size= len(self.X) - test_size
         return  random_split(self, [train_size, test_size])
 
+#######---------Init wandB----------------------------#
+"""
 wandb.init(project="fairlearn-pytorch", name =run_name, config={
     "run_name": run_name,
     "architecture": "MLP",
     "dataset": "adult",
     "batch_size": 32,
-    "n_epoch": 20,
+    "n_epoch": 5,
     "learning_rate": 0.001,
     "noise": noise
 })
 config = wandb.config
 
+"""
 
 dataset = CSVDataset()
-train, test = dataset.get_splits()
-train_dl = DataLoader(train, batch_size=32, shuffle = True)
+#train, test = dataset.get_splits()
+#train_dl = DataLoader(train, batch_size=32, shuffle = True)
 #test_dl = DataLoader(test, batch_size=1024, shuffle = False)
 
 X = dataset.raw_X
@@ -160,6 +164,7 @@ class MLP(Module):
         return X
 
 # Add comments lovely.
+# Skorch wrapper
 class SampleWeightNN(NeuralNetClassifier):
     def __init__(self, *args, criterion__reduce = False, **kwargs):
         super().__init__(*args, criterion__reduce=criterion__reduce, **kwargs)
@@ -188,28 +193,8 @@ class SampleWeightNN(NeuralNetClassifier):
         loss_reduced = (sample_weight * loss_unreduced).mean()
         return loss_reduced
 
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-net = SampleWeightNN(
-    MLP(2123),
-    max_epochs = 20,
-    optimizer = SGD,
-    lr = 0.001,
-    batch_size = 32,
-    train_split = None,
-    iterator_train__shuffle = True,
-    criterion = MSELoss,
-    device = device
-)
-
-print("Training unmitigated")
-unmitigated_predictor = net
-unmitigated_predictor.fit(X_train, Y_train)
-unmitigated_prediction = unmitigated_predictor.predict(X_test)
-acc_score_um = skm.accuracy_score(Y_test, unmitigated_prediction)
-print(f"Accuracy score um: {acc_score_um}")
-
-optimizer = SGD(net.parameters(), lr= 0.001)
-
+model = MLP(239)
+optimize = SGD(model.parameters(), lr= 0.001, momentum = 0)
 train_size = len(X_train)
 #-------------------------------DP--------------------------------#
 if(enable_dp):
@@ -223,14 +208,37 @@ if(enable_dp):
             max_grad_norm = 1.0,
             secure_rng = False,
         )
-        privacy_engine.attach(optimizer)
+        privacy_engine.attach(optimize)
+
+######### initialise neural net ########################
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+net = SampleWeightNN(
+    model,
+    max_epochs = 5,
+    optimizer = optimize,
+    lr = 0.001,
+    batch_size = 32,
+    train_split = None,
+    iterator_train__shuffle = True,
+    criterion = MSELoss,
+    device = device
+)
+
+#optim_params = [{'params': params, 'lr':0.001}]
+#net2 = MLP(239)
+
+print("Training unmitigated")
+unmitigated_predictor = net
+unmitigated_predictor.fit(X_train, Y_train)
+unmitigated_prediction = unmitigated_predictor.predict(X_test)
+acc_score_um = skm.accuracy_score(Y_test, unmitigated_prediction)
+print(f"Accuracy score um: {acc_score_um}")
 
 
 #--------------------------------- Grid Search -------------------- #
 
 estimator = net
 disparity_moment = DemographicParity()
-print("Here we go.\n")
 sweep = GridSearch(estimator, disparity_moment, grid_size = 71)
 sweep.fit(X_train, Y_train, sensitive_features = A_train)
 print("sweep fit done.\n")
@@ -242,7 +250,6 @@ errors, disparities, accuracies  = [], [], []
 for m in predictors:
     def classifier(X): return m.predict(X)
     error = ErrorRate()
-    #print(error, "\n")
     error.load_data(X_train, pd.Series(Y_train), sensitive_features = A_train)
     disparity = DemographicParity()
     disparity.load_data(X_train, pd.Series(Y_train), sensitive_features= A_train)
@@ -254,12 +261,11 @@ for m in predictors:
     error_log = error.gamma(classifier)[0]
     disparity_log = disparity.gamma(classifier).max()
 
-    wandb.log({
-                'error': error_log,
-                'disparity': disparity_log,
-                'acc': accuracy})
+#    wandb.log({
+#                'error': error_log,
+#                'disparity': disparity_log,
+#                'acc': accuracy})
 
-print("All results voila: \n")
 all_results = pd.DataFrame({"predictor": predictors, "error": errors, "disparity": disparities})
 all_results2 = pd.DataFrame({"error": errors, "disparity": disparities, "accuracy": accuracies})
 
@@ -268,16 +274,28 @@ for row in all_results.itertuples():
     error_for_lower_or_eq_disparity = all_results["error"][all_results["disparity"] <= row.disparity]
     if row.error <= error_for_lower_or_eq_disparity.min():
         non_dominated.append(row.predictor)
+
+predicted = {"unmitigated": unmitigated_predictor.predict(X_test)}
+for i in range(len(non_dominated)):
+    key = "dominant_model_{0}".format(i)
+    value = non_dominated[i].predict(X_test)
+    predicted[key] = value
+    #print(value)
+#print("##########################################")
+#print(predicted)
+print("################################################")
+
 print(all_results2)
 print("#################################################")
 #print(non_dominated)
+
 file_path = "out//all_results." + run_name
 file_object = open(file_path, "a+")
 all_results2.to_csv(file_object, index = False)
 file_object.close()
 
 
-"""
+""""
 result = """
 #==============
 #Test set: {}

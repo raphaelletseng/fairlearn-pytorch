@@ -1,0 +1,41 @@
+2021-04-14 13:44:03,727 INFO    MainThread:23444 [internal.py:wandb_internal():91] W&B internal server running at pid: 23444, started at: 2021-04-14 13:44:03.726390
+2021-04-14 13:44:03,740 INFO    WriterThread:23444 [datastore.py:open_for_write():77] open: C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210414_134401-2cncnbjz\run-2cncnbjz.wandb
+2021-04-14 13:44:03,741 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: check_version
+2021-04-14 13:44:03,743 DEBUG   SenderThread:23444 [sender.py:send():161] send: header
+2021-04-14 13:44:03,743 DEBUG   SenderThread:23444 [sender.py:send():161] send: request
+2021-04-14 13:44:03,744 DEBUG   SenderThread:23444 [sender.py:send_request():170] send_request: check_version
+2021-04-14 13:44:03,921 DEBUG   SenderThread:23444 [sender.py:send():161] send: run
+2021-04-14 13:44:04,295 INFO    SenderThread:23444 [sender.py:_start_run_threads():638] run started: 2cncnbjz with start time 1618422241
+2021-04-14 13:44:04,295 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: run_start
+2021-04-14 13:44:04,295 DEBUG   SenderThread:23444 [sender.py:send():161] send: summary
+2021-04-14 13:44:04,310 INFO    SenderThread:23444 [sender.py:_save_file():769] saving file wandb-summary.json with policy end
+2021-04-14 13:44:09,579 DEBUG   HandlerThread:23444 [meta.py:__init__():34] meta init
+2021-04-14 13:44:09,580 DEBUG   HandlerThread:23444 [meta.py:__init__():48] meta init done
+2021-04-14 13:44:09,580 DEBUG   HandlerThread:23444 [meta.py:probe():190] probe
+2021-04-14 13:44:09,607 DEBUG   HandlerThread:23444 [meta.py:_setup_git():180] setup git
+2021-04-14 13:44:09,870 DEBUG   HandlerThread:23444 [meta.py:_setup_git():187] setup git done
+2021-04-14 13:44:09,870 DEBUG   HandlerThread:23444 [meta.py:_save_pip():52] save pip
+2021-04-14 13:44:09,873 DEBUG   HandlerThread:23444 [meta.py:_save_pip():66] save pip done
+2021-04-14 13:44:09,873 DEBUG   HandlerThread:23444 [meta.py:probe():231] probe done
+2021-04-14 13:44:09,882 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: status
+2021-04-14 13:44:09,882 DEBUG   SenderThread:23444 [sender.py:send():161] send: request
+2021-04-14 13:44:09,882 DEBUG   SenderThread:23444 [sender.py:send_request():170] send_request: status
+2021-04-14 13:44:10,051 DEBUG   SenderThread:23444 [sender.py:send():161] send: files
+2021-04-14 13:44:10,051 INFO    SenderThread:23444 [sender.py:_save_file():769] saving file wandb-metadata.json with policy now
+2021-04-14 13:44:25,097 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: status
+2021-04-14 13:44:25,098 DEBUG   SenderThread:23444 [sender.py:send():161] send: request
+2021-04-14 13:44:25,098 DEBUG   SenderThread:23444 [sender.py:send_request():170] send_request: status
+2021-04-14 13:44:40,338 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: status
+2021-04-14 13:44:40,339 DEBUG   SenderThread:23444 [sender.py:send():161] send: request
+2021-04-14 13:44:40,339 DEBUG   SenderThread:23444 [sender.py:send_request():170] send_request: status
+2021-04-14 13:44:40,575 DEBUG   SenderThread:23444 [sender.py:send():161] send: stats
+2021-04-14 13:44:55,608 DEBUG   HandlerThread:23444 [handler.py:handle_request():101] handle_request: status
+2021-04-14 13:44:55,609 DEBUG   SenderThread:23444 [sender.py:send():161] send: request
+2021-04-14 13:44:55,609 DEBUG   SenderThread:23444 [sender.py:send_request():170] send_request: status
+2021-04-14 13:44:57,808 WARNING MainThread:23444 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2021-04-14 13:44:58,493 WARNING MainThread:23444 [internal.py:wandb_internal():146] Internal process interrupt: 2
+2021-04-14 13:44:58,493 ERROR   MainThread:23444 [internal.py:wandb_internal():149] Internal process interrupted.
+2021-04-14 13:44:58,620 INFO    HandlerThread:23444 [handler.py:finish():535] shutting down handler
+2021-04-14 13:44:58,759 INFO    WriterThread:23444 [datastore.py:close():258] close: C:\Users\rapha\Documents\GitHub\fairlearn-pytorch\wandb\run-20210414_134401-2cncnbjz\run-2cncnbjz.wandb
+2021-04-14 13:44:58,759 INFO    SenderThread:23444 [sender.py:finish():872] shutting down sender
+2021-04-14 13:44:59,962 INFO    MainThread:23444 [internal.py:handle_exit():78] Internal process exited
