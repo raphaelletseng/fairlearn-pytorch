@@ -11,14 +11,14 @@ import sklearn.metrics as skm
 
 import wandb
 wandb.login()
-run_name = "fairlearn-sex-nodp-run1"
+run_name = "fairlearn-edu-nodp-run1"
 
 data = fetch_openml(data_id = 1590, as_frame = True)
 X_raw = data.data
 Y = (data.target == '>50K') * 1
 
-A = X_raw["sex"]
-X = X_raw.drop(labels = ['sex'], axis = 1)
+A = X_raw["education"]
+X = X_raw.drop(labels = ['education'], axis = 1)
 #print(X)
 
 X = pd.get_dummies(X) #one hot
@@ -67,7 +67,7 @@ print("Commencing GridSearch.\n")
 
 sweep = GridSearch(LogisticRegression(solver='liblinear', fit_intercept=True),
                         constraints = DemographicParity(),
-                        grid_size=71)
+                        grid_size=500)
 
 sweep.fit(X_train, Y_train, sensitive_features = A_train)
 predictors = sweep.predictors_
@@ -104,6 +104,15 @@ for row in all_results.itertuples():
     error_for_lower_or_eq_disparity = all_results["error"][all_results["disparity"] <= row.disparity]
     if row.error <= error_for_lower_or_eq_disparity.min():
         non_dominated.append(row.predictor)
+
+predicted = {"unmitigated": unmitigated_predictor.predict(X_test)}
+for in range(len(non_dominated)):
+    key = "dominant_model_{0}".format(i)
+    value = non_dominated[i].predict(X_test)
+    predicted[key] = value
+
+print(predicted)
+print("################################################")
 
 print(all_results)
 print("#################################################")

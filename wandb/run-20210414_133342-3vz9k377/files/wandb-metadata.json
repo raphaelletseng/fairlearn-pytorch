@@ -1,0 +1,22 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.7.4",
+    "heartbeatAt": "2021-04-14T17:33:55.006912",
+    "startedAt": "2021-04-14T17:33:42.979232",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "fairness.py",
+    "codePath": "fairness.py",
+    "git": {
+        "remote": "https://github.com/raphaelletseng/fairlearn-pytorch.git",
+        "commit": "71bc3cefc685efffc49a7d4e1bdf58b3566074d2"
+    },
+    "email": "raphaelle.tseng@mail.mcgill.ca",
+    "root": "C:/Users/rapha/Documents/GitHub/fairlearn-pytorch",
+    "host": "Raphaelle-PC",
+    "username": "rapha",
+    "executable": "C:\\Users\\rapha\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+}
